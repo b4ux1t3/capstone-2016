@@ -2,7 +2,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+  <style>
+    .agenda-head{font-family: monospace; font-style: italic;}
+  </style>
 </head>
 <body>
   <div class="container">
@@ -17,95 +19,77 @@
     </div><!-- End of jumbotron-->
     <div class="row">
       <div class= "col-lg-2 col-md-2 col-sm-4 -col-xs-12">
-        <a href="#leaders" style="text-decoration: none; color: black;" class = "btn btn-default" data-toggle="collapse">Leaders</a>
-
-        <div id="leaders"  class="collapse">
-            <ul class="list-group">
-              <li class="list-group-item" style="background-color: #13e935">
-                <h3>Module 1</h3>
-                <h5>Dec 10</h5>
-                <p>Flo</p>
-              </li>
-              <li class="list-group-item">
-                <h3>Module 2</h3>
-                <h5>Dec 17, Jan 7</h5>
-                <p>Roger</p>
-              </li>
-              <li class="list-group-item">
-                <h3>Module 3</h3>
-                <h5>Jan 14, Jan 21</h5>
-                <p>Chris</p>
-              </li>
-              <li class="list-group-item">
-                <h3>Module 4</h3>
-                <h5>Jan 28, Feb 4</h5>
-                <p>Erica</p>
-              </li>
-              <li class="list-group-item">
-                <h3>Module 5</h3>
-                <h5>Feb 11, Feb 18</h5>
-                <p>Jose</p>
-              </li>
-              <li class="list-group-item">
-                <h3>Module 6</h3>
-                <h5>Feb 25, Mar 3</h5>
-                <p>Flo/Adam</p>
-              </li>
-            </ul>
-          </div> <!-- End of leaders -->
+          <ul class="list-group">
+            <li class="list-group-item" style="background-color: #13e935">
+              <h3>Module 1</h3>
+              <h5>Dec 10</h5>
+              <p>Flo</p>
+            </li>
+            <li class="list-group-item">
+              <h3>Module 2</h3>
+              <h5>Dec 17, Jan 7</h5>
+              <p>Roger</p>
+            </li>
+            <li class="list-group-item">
+              <h3>Module 3</h3>
+              <h5>Jan 14, Jan 21</h5>
+              <p>Chris</p>
+            </li>
+            <li class="list-group-item">
+              <h3>Module 4</h3>
+              <h5>Jan 28, Feb 4</h5>
+              <p>Erica</p>
+            </li>
+            <li class="list-group-item">
+              <h3>Module 5</h3>
+              <h5>Feb 11, Feb 18</h5>
+              <p>Jose</p>
+            </li>
+            <li class="list-group-item">
+              <h3>Module 6</h3>
+              <h5>Feb 25, Mar 3</h5>
+              <p>Flo/Adam</p>
+            </li>
+          </ul>
         </div><!-- End of col-->
-        <div class="col-lg-4 col-md-4 col-sm-12 -col-xs-12">
-        <p>
-          This is the page for Mrs. Yoshida's Thursday night SD 2997 class.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
-        <p>
-          This is a bunch of filler text so that Chris can test stylings on this page.
-        </p>
+        <div class="col-lg-6 col-md-6 col-sm-12 -col-xs-12">
+          <p class="agenda-head">Project Name:</p>
+          <p>Medical Express 2018</p>
+          <p class="agenda-head">Project Definition: </p>
+          <ul>
+            <li>Application Language: Java, Go</li>
+            <li>Database Language: SQL</li>
+            <li>Implementation Software: MySQL</li>
+            <li>Productivity &amp; Development Software: Eclipse, MS Project, MS Word, MS Visio, MS PowerPoint, Google Hangouts, Slack</li>
+          </ul>
+          <p class="agenda-head">Project Calendar:</p>
+          <ul style="list-style-type:none;">
+            <li>December 10th:Agenda Decided</li>
+            <li>January 13th:Project Schedule</li>
+            <li>January 27th:Data-Flow Diagram, Entity Relational Diagram</li>
+            <li>February 10th:Database Prototype Implementation, Database Management module</li>
+            <li>*Start testing database</li>
+            <li>February 24th:Completed Database, Application Prototype</li>
+            <li>Start testing application</li>
+            <li>March 9th:Presentation</li>
+            <li>Project Purpose: Creating an application that collects and displays health information about individual patients, provides standard reporting and scheduling capabilities, and employs standard terminology. The software should include international classifications of medical standards such as ICD-10 coding and useful features for medical advice generation. </li>
+          </ul>
+
+          <p class="agenda-head">Project Goals and Objectives: </p>
+          <ol>
+          <li>To have a functional database that can store the patient information in a way that can be presented in a user-friendly interface. </li>
+          <li>To have an application that can reliably analyze and manage the information in the database. It will be split into five modules:
+          <ul>
+          <li>Patient module: Direct interface to enter patient data</li>
+          <li>Appointment module: Direct interface to enter appointments, based on physician availability</li>
+          <li>Medical Advice module: Should analyze diagnosis and recommend medication/course of action</li>
+          <li>Reporting module: Read only interface to Medical Advice module</li>
+          <li>Database Management module: To manage patient database</li>
+          </ul>
+          </li>
+          </ol>
+          <p class="agenda-head">Success Criteria:</p>
+          <p>A completion of both goals.</p>
         </div>
       </div><!-- End of row-->
     </div>
