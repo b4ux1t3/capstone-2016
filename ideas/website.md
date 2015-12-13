@@ -19,8 +19,12 @@ You don't have to contribute like this if you don't want to. If you just want to
 
 Ideas:
 
-Brochure page, with a sliding carousel of screenshots of the software and stock pictures of smiling doctors. We may not be business majors, but it doesn't hurt to show that we know how to market our software, at least to individual customers and/or higher-ups.
+* Brochure page, with a sliding carousel of screenshots of the software and stock pictures of smiling doctors. We may not be business majors, but it doesn't hurt to show that we know how to market our software, at least to individual customers and/or higher-ups.
+
+Intentions:
+
+* A comprehensive section of the site for learning, including multiple resources for each topic.
 
 Active Development:
 
-Navigation bar for resources regarding the various aspects of the project. Java, SQL, and HTML stuff.
+* Navigation bar for resources regarding the various aspects of the project. Java, SQL, and HTML stuff. [Mostly done]
