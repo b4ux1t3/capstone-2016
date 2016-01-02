@@ -32,6 +32,7 @@
     .jumbotron{font-family: 'Pacifico', cursive}
     .page-header{font-family: 'Titillium Web', arial, sans-serif}
     .agenda-head{font-family: monospace; font-style: italic;}
+    .topic{border: 1px solid #dddddd; border-radius: 5px; padding: 5px; margin-top: 10px;}
   </style>
 </head>
 <body>
@@ -39,61 +40,64 @@
     <h1 class="page-header">Java</h1>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
       While I am  not the biggest fan of Java, it's kind of what we have to use. As such, here is a quick primer on the basics:
-      <p class="agenda-head">
-        Control Flow
-      </p>
-      <p>
-        In java, you have two main ways of controlling what code gets executed. They are the <code>if</code> statement and the <code>case</code> statement.
-      </p>
-      <p>
-        <code>if</code> works as such:
-        <pre>
-if (boolean condition) {
-  // Do stuff
-}
-        </pre>
-      </p>
-      <p>
-        If you want to perform a task if the <code>if</code> statement is <code>false</code>, you only need to add an<code>else</code> statement.
-      </p>
-      <p>
-        Example:
-        <pre>
-if (boolean condition) {
-  // Do stuff
-} else {
-  // Do something else
-}
-        </pre>
-      </p>
-      <p>
-        You can pair <code>if</code> with <code>else</code> to make the <code>else if</code> statement. So, if your <code>if</code> statement is <code>false</code>, you can check another condition, and run more code if <em>that</em> is true.
-      </p>
-      <p>
-        Example:
-        <pre>
-if (boolean condition) {
-  // Do stuff
-} else if (another boolean condition){
-  // Do something else
-}
-        </pre>
-      </p>
-      <p>
-        Finally, you can add an <code>else</code> statement after all of your <code>else if</code> statements to run a section of code if all your previous statments were false.
-      </p>
-      <p>
-        Example:
-        <pre>
-if (boolean condition) {
-  // Do stuff
-} else if (another boolean condition){
-  // Do something else
-} else {
-  // Do something if nothign else was true
-}
-        </pre>
-      </p>
+      <div class="topic">
+        <p class="agenda-head">
+          Control Flow
+        </p>
+        <p>
+          In java, you have two main ways of controlling what code gets executed. They are the <code>if</code> statement and the <code>case</code> statement.
+        </p>
+        <p>
+          <code>if</code> works as such:
+          <pre>
+  if (boolean condition) {
+    // Do stuff
+  }
+          </pre>
+        </p>
+        <p>
+          If you want to perform a task if the <code>if</code> statement is <code>false</code>, you only need to add an<code>else</code> statement.
+        </p>
+        <p>
+          Example:
+          <pre>
+  if (boolean condition) {
+    // Do stuff
+  } else {
+    // Do something else
+  }
+          </pre>
+        </p>
+        <p>
+          You can pair <code>if</code> with <code>else</code> to make the <code>else if</code> statement. So, if your <code>if</code> statement is <code>false</code>, you can check another condition, and run more code if <em>that</em> is true.
+        </p>
+        <p>
+          Example:
+          <pre>
+  if (boolean condition) {
+    // Do stuff
+  } else if (another boolean condition){
+    // Do something else
+  }
+          </pre>
+        </p>
+        <p>
+          Finally, you can add an <code>else</code> statement after all of your <code>else if</code> statements to run a section of code if all your previous statments were false.
+        </p>
+        <p>
+          Example:
+          <pre>
+  if (boolean condition) {
+    // Do stuff
+  } else if (another boolean condition){
+    // Do something else
+  } else {
+    // Do something if nothign else was true
+  }
+          </pre>
+        </p>
+      </div>
+
     </div>
   </div>
 </body>
