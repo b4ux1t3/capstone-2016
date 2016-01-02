@@ -32,7 +32,6 @@
     .jumbotron{font-family: 'Pacifico', cursive}
     .page-header{font-family: 'Titillium Web', arial, sans-serif}
     .agenda-head{font-family: monospace; font-style: italic;}
-    code{font-family: monospace;}
   </style>
 </head>
 <body>
@@ -49,13 +48,51 @@
       <p>
         <code>if</code> works as such:
         <pre>
-          if (boolean condition) {
-            Do stuff
-          }
+if (boolean condition) {
+  // Do stuff
+}
         </pre>
       </p>
       <p>
-        You can pair <code></code>
+        If you want to perform a task if the <code>if</code> statement is <code>false</code>, you only need to add an<code>else</code> statement.
+      </p>
+      <p>
+        Example:
+        <pre>
+if (boolean condition) {
+  // Do stuff
+} else {
+  // Do something else
+}
+        </pre>
+      </p>
+      <p>
+        You can pair <code>if</code> with <code>else</code> to make the <code>else if</code> statement. So, if your <code>if</code> statement is <code>false</code>, you can check another condition, and run more code if <em>that</em> is true.
+      </p>
+      <p>
+        Example:
+        <pre>
+if (boolean condition) {
+  // Do stuff
+} else if (another boolean condition){
+  // Do something else
+}
+        </pre>
+      </p>
+      <p>
+        Finally, you can add an <code>else</code> statement after all of your <code>else if</code> statements to run a section of code if all your previous statments were false.
+      </p>
+      <p>
+        Example:
+        <pre>
+if (boolean condition) {
+  // Do stuff
+} else if (another boolean condition){
+  // Do something else
+} else {
+  // Do something if nothign else was true
+}
+        </pre>
       </p>
     </div>
   </div>
