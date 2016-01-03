@@ -45,9 +45,10 @@
           Control Flow
         </p>
         <p>
-          In java, you have two main ways of controlling what code gets executed. They are the <code>if</code> statement and the <code>case</code> statement.
+          In java, you have two main ways of controlling what code gets executed. They are the <code>if</code> statement and the <code>switch</code> statement.
         </p>
         <p>
+          <h3><code>if</code></h3>
           <code>if</code> works as such:
           <pre>
   if (boolean condition) {
@@ -94,6 +95,44 @@
   } else {
     // Do something if nothign else was true
   }
+          </pre>
+        </p>
+        <p>
+          <h3><code>switch</code></h3>
+          The <code>switch</code> statement is basically a giant block of <code>else if</code> statements. You select a variable to be checked, and then you check for indiviudal <code>case</code>s, and then do something if that <code>case</code> matches the checked value. If you want something to happen in case your statement does not match any of the cases, you include a <code>default</code> case with no value to check. Note, you need to include a <code>break</code> statement after each case, or else all remaining <code>case</code>s will be tested, and the <code>default</code> case will still activate. This can be done intentionally.
+
+          Example:
+          <pre>
+int month = 8;
+String monthString;
+switch (month) {
+    case 1:  monthString = "January";
+             break;
+    case 2:  monthString = "February";
+             break;
+    case 3:  monthString = "March";
+             break;
+    case 4:  monthString = "April";
+             break;
+    case 5:  monthString = "May";
+             break;
+    case 6:  monthString = "June";
+             break;
+    case 7:  monthString = "July";
+             break;
+    case 8:  monthString = "August";
+             break;
+    case 9:  monthString = "September";
+             break;
+    case 10: monthString = "October";
+             break;
+    case 11: monthString = "November";
+             break;
+    case 12: monthString = "December";
+             break;
+    default: monthString = "Invalid month";
+             break;
+}
           </pre>
         </p>
       </div>
