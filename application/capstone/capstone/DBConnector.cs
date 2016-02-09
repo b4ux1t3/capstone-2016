@@ -96,31 +96,49 @@ namespace capstone
         /// These classes will be C# representations of the MySQL data structures. They are meant to make it easy to insert and delete entries in each of the tables within the database.
         /// 
         /// The first class is just a superclass to make sure that all of the subsequent classes are of the same type.
+        /// 
+        /// The Personclass is to group Patients and Staff together for the purpose of security and ease.
         /// </summary>
         /// 
         private class DBObject
         {
+            internal string id = "NULL";
+            internal string dateEntered;
+        }
 
+        private class Person
+        {
+            internal string firstName;
+            internal string LastName;
+            internal string phone;
         }
 
         private class Patient : DBObject
         {
-
+            internal enum gender
+            {
+                Male,
+                Female
+            }
         }
 
-        private class  : DBObject
+        private class Staff : DBObject
         {
-
+            internal string admin;
         }
 
         private class Appointment : DBObject
         {
-
+            internal string appointmentDate;
+            internal string patientID;
+            internal string staffID;
+            internal string treatmentID;           
         }
 
         private class Treatment : DBObject
         {
-
+            internal string treatmentTitle;
+            internal string treatmentDescription;
         }
     }
 }
