@@ -13,10 +13,19 @@ namespace capstone
         {
             InitializeComponent();
         }
-
+        DBConnector connector = new DBConnector();
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-
+            if (txtStaffID.Text != string.Empty && connector.CheckLogIn(txtStaffID.Text) != 0)
+            {
+                Testing test = new Testing();
+                test.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid Staff ID!");
+            }
         }
     }
 }

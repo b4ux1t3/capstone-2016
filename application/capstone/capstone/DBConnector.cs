@@ -53,7 +53,8 @@ namespace capstone
 
             Console.WriteLine("Exiting Initialize");
         }
-
+        
+        #region Open/Close/Send
         private bool OpenConnection()
         {
             try
@@ -105,15 +106,15 @@ namespace capstone
             }
         }
 
-        private bool SendQuery(string query)
+        private bool SendNonQuery(string nonQuery)
         {
             bool outcome;
 
             // Open connection returns a boolean, so we can instantly check if the connection was successful
             if (this.OpenConnection())
             {
-                // Create command and assign the query and connection from the constructor
-                MySqlCommand cmd = new MySqlCommand(query, connection);
+                // Create command and assign the nonquery and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(nonQuery, connection);
 
                 // Execute command, store result in success.
                 // Since ExecuteNonQuery returns the number of rows affected, we can check if anything was change in the database by testing if success is greater than 0 
@@ -139,12 +140,37 @@ namespace capstone
 
             return outcome;
         }
+        
+        private dataCount SendQuery(string query, string column)
+        {
+            dataCount data = new dataCount("", 0);
+            if (this.OpenConnection())
+            { 
+                // Create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Create a reader to get the data from the database
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    data.changeData(reader.GetString(column));
+                    data.incrementCount();
+                }
+
+                this.CloseConnection();
+            }
+
+            return data;
+        }
+        #endregion
+
         #region Database Query Methods
         /// <summary>
         /// Since inheritance doe snot work teh way I expected it to, I need to create multiple methods for both Insertion and delietion. 
         /// I don't think I will need aseparate one for selection. We'll see.
         /// </summary>
-        /// <param name="entry">This is a Patient object, to be created by the calling window.</param>
+        /// <param name="entry">This is a DBObject object, to be created by the calling window.</param>
         /// <returns>Returns whether or not the query was successful</returns>
 
         #region Insert
@@ -156,8 +182,8 @@ namespace capstone
 
             Console.WriteLine(query);
 
-            // SendQuery returns a boolean, so we can check if it was successful
-            return SendQuery(query);
+            // SendNonQuery returns a boolean, so we can check if it was successful
+            return SendNonQuery(query);
         }
 
         internal bool Insert(Staff entry)
@@ -167,8 +193,8 @@ namespace capstone
 
             Console.WriteLine(query);
 
-            // SendQuery returns a boolean, so we can check if it was successful
-            return SendQuery(query);
+            // SendNonQuery returns a boolean, so we can check if it was successful
+            return SendNonQuery(query);
             
         }
 
@@ -179,8 +205,8 @@ namespace capstone
 
             Console.WriteLine(query);
 
-            // SendQuery returns a boolean, so we can check if it was successful
-            return SendQuery(query);
+            // SendNonQuery returns a boolean, so we can check if it was successful
+            return SendNonQuery(query);
         }
 
         internal bool Insert(Treatment entry)
@@ -190,23 +216,78 @@ namespace capstone
 
             Console.WriteLine(query);
 
-            // SendQuery returns a boolean, so we can check if it was successful
-            return SendQuery(query);
+            // SendNonQuery returns a boolean, so we can check if it was successful
+            return SendNonQuery(query);
             
         }
         #endregion
+        //Todo: Add delete functionality
         #region Delete
 
         #endregion
+
+        // This simply checks if the log in provided in the LogInWIndow is a valid entry
+        internal int CheckLogIn(string ID)
+        {
+            int result = 0;
+            if (this.OpenConnection())
+            {
+
+                try
+                {
+                    string query = string.Format("SELECT COUNT(*) FROM staff WHERE staff_ID = {0};", ID);
+                    // Create command and assign the query and connection from the constructor
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                    //Create a reader to get the data from the database
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    result = Convert.ToInt32(reader["COUNT(*)"].ToString());
+                }
+                catch (MySqlException ex)
+                {
+                    Console.WriteLine(ex.StackTrace);
+                    return 0;
+                }
+
+                this.CloseConnection();
+            }
+
+            return result;
+        }
         #endregion
 
+        /// <summary>
+        /// This is specifically so I can get the number of rows returned
+        /// </summary>
+        internal class dataCount
+        {
+            internal string data;
+            internal int count;
+
+            internal dataCount(string data, int count)
+            {
+                this.data = data;
+                this.count = count;
+            }
+
+            internal void changeData(string moreData)
+            {
+                this.data += moreData;
+            }
+
+            internal void incrementCount()
+            {
+                this.count++;
+            }
+        }
         #region DB Objects   
         /// <summary>
         /// These classes will be C# representations of the MySQL data structures. They are meant to make it easy to insert and delete entries in each of the tables within the database.
         /// 
         /// The first class is just a superclass to make sure that all of the subsequent classes are of the same type.
         /// 
-        /// The Personclass is to group Patients and Staff together for the purpose of security and ease.
+        /// The Person class is to group Patients and Staff together for the purpose of security and ease.
         /// </summary>
         /// 
         internal class DBObject
