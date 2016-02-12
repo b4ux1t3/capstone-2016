@@ -8,7 +8,7 @@
         Title="Patient Treatment" Height="239.098" Width="499.624">
     <Grid Margin="0,10,0,0">
         <Label x:Name="label" Content="Patient ID: XXXX" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.086,-0.076" Width="98"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="27,89,0,0" VerticalAlignment="Top" Width="433" RenderTransformOrigin="0.499,-0.991"/>
+        <ComboBox x:Name="cmboTreatments" HorizontalAlignment="Left" Margin="27,89,0,0" VerticalAlignment="Top" Width="433" RenderTransformOrigin="0.499,-0.991"/>
         <Button x:Name="btnApply" Content="Apply" HorizontalAlignment="Left" Margin="200,127,0,0" VerticalAlignment="Top" Width="75" Click="btnApply_Click"/>
 
     </Grid>
