@@ -258,7 +258,7 @@ namespace capstone
         #endregion
 
         /// <summary>
-        /// This is specifically so I can get the number of rows returned
+        /// This is specifically so I can get the number of rows returned from SQL queries
         /// </summary>
         internal class dataCount
         {
