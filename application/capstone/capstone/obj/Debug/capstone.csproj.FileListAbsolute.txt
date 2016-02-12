@@ -1,1 +1,2 @@
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\bin\Debug\capstone.exe.config
+C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\bin\Debug\capstone.exe.config
