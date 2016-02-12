@@ -91,7 +91,7 @@ namespace capstone
             }
         }
 
-        
+        #region DB Objects   
         /// <summary>
         /// These classes will be C# representations of the MySQL data structures. They are meant to make it easy to insert and delete entries in each of the tables within the database.
         /// 
@@ -106,14 +106,14 @@ namespace capstone
             internal string dateEntered;
         }
 
-        private class Person
+        private class Person : DBObject
         {
             internal string firstName;
             internal string LastName;
             internal string phone;
         }
 
-        private class Patient : DBObject
+        private class Patient : Person
         {
             internal enum gender
             {
@@ -122,7 +122,7 @@ namespace capstone
             }
         }
 
-        private class Staff : DBObject
+        private class Staff : Person
         {
             internal string admin;
         }
@@ -140,5 +140,6 @@ namespace capstone
             internal string treatmentTitle;
             internal string treatmentDescription;
         }
+        #endregion
     }
 }
