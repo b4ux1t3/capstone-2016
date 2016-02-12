@@ -167,12 +167,14 @@ namespace capstone
 
         #region Database Query Methods
         /// <summary>
-        /// Since inheritance doe snot work teh way I expected it to, I need to create multiple methods for both Insertion and delietion. 
+        /// Since inheritance doe snot work the way I expected it to, I need to create multiple methods for both Insertion and deletion.
         /// I don't think I will need aseparate one for selection. We'll see.
+        /// Boy was I wrong. It looks like we're going to need a bunch of different selection methods.
+        /// Note to self: Look up how to use DataTables
         /// </summary>
         /// <param name="entry">This is a DBObject object, to be created by the calling window.</param>
         /// <returns>Returns whether or not the query was successful</returns>
-
+        
         #region Insert
         internal bool Insert(Patient entry)
         {
@@ -227,6 +229,7 @@ namespace capstone
         #endregion
 
         // This simply checks if the log in provided in the LogInWIndow is a valid entry
+        //Todo: Make this return some way to tell if the user is an admin
         internal int CheckLogIn(string ID)
         {
             int result = 0;
@@ -252,7 +255,10 @@ namespace capstone
 
                 this.CloseConnection();
             }
-
+            else
+            {
+                result = -1;
+            }
             return result;
         }
         #endregion
