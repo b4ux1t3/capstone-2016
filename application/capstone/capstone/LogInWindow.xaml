@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Log In" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="txtStaffID" HorizontalAlignment="Left" Height="23" Margin="75,158,0,0" TextWrapping="Wrap" Text="Enter Staff ID" VerticalAlignment="Top" Width="235"/>
+        <TextBox x:Name="txtStaffID" HorizontalAlignment="Left" Height="23" Margin="104,158,0,0" TextWrapping="Wrap" Text="Enter Staff ID" VerticalAlignment="Top" Width="206"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="352,161,0,0" VerticalAlignment="Top" Width="75" Click="btnSubmit_Click"/>
 
     </Grid>

@@ -10,12 +10,13 @@ namespace capstone
 {
     class DBConnector
     {
-        private MySqlConnection connection;
+        internal MySqlConnection connection;
         private string server;
         private string database;
         private string password;
         private string userName;
 
+        // Just in case we need this for testing.
         //static void Main(string[] args)
         //{
         //    DBConnector x = new DBConnector();
@@ -34,9 +35,9 @@ namespace capstone
         private void Initialize()
         {
             Console.WriteLine("Entered Initialize");
-            server = "192.168.1.4";
+            server = "192.168.1.9";
             database = "capstone";
-            password = "this password is very long and complicated and pretty easy to remember";
+            password = "java see sharp myess queue ell";
             userName = "application";
             string connectionString = "SERVER=" + server + ";" + "DATABASE=" +
         database + ";" + "UID=" + userName + ";" + "PASSWORD=" + password + ";";
@@ -57,6 +58,7 @@ namespace capstone
         {
             try
             {
+                Initialize();
                 Console.WriteLine("Trying to open connection.");
                 connection.Open();
                 return true;
@@ -74,6 +76,11 @@ namespace capstone
                         break;
                 }
                 return false;
+            } catch(NullReferenceException ex)
+            {
+                Console.WriteLine("Well, something borked");
+                Console.WriteLine(ex.StackTrace);
+                return false;
             }
         }
 
@@ -81,6 +88,7 @@ namespace capstone
         {
             try
             {
+                Initialize();
                 connection.Close();
                 return true;
             }
@@ -89,7 +97,108 @@ namespace capstone
                 Console.WriteLine(ex.Message);
                 return false;
             }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine("Well, something borked");
+                Console.WriteLine(ex.StackTrace);
+                return false;
+            }
         }
+
+        private bool SendQuery(string query)
+        {
+            bool outcome;
+
+            // Open connection returns a boolean, so we can instantly check if the connection was successful
+            if (this.OpenConnection())
+            {
+                // Create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                // Execute command, store result in success.
+                // Since ExecuteNonQuery returns the number of rows affected, we can check if anything was change in the database by testing if success is greater than 0 
+                int success = cmd.ExecuteNonQuery();
+
+                if (success > 0)
+                {
+                    outcome = true;
+                }
+                else
+                {
+                    outcome = false;
+                }
+            }
+            else // If the connection was not successful, we want to be sure we return false.
+            {
+                outcome = false;
+            }
+
+            // Close connection
+            this.CloseConnection();
+
+
+            return outcome;
+        }
+        #region Database Query Methods
+        /// <summary>
+        /// Since inheritance doe snot work teh way I expected it to, I need to create multiple methods for both Insertion and delietion. 
+        /// I don't think I will need aseparate one for selection. We'll see.
+        /// </summary>
+        /// <param name="entry">This is a Patient object, to be created by the calling window.</param>
+        /// <returns>Returns whether or not the query was successful</returns>
+
+        #region Insert
+        internal bool Insert(Patient entry)
+        {
+            
+            // Create the query to send to the database
+            string query = String.Format("INSERT INTO patients VALUES('{0}', '{1}', '{2}', '{3}', {4}, {5});", entry.firstName, entry.lastName, entry.phone, entry.gender, entry.dateEntered, entry.id);
+
+            Console.WriteLine(query);
+
+            // SendQuery returns a boolean, so we can check if it was successful
+            return SendQuery(query);
+        }
+
+        internal bool Insert(Staff entry)
+        {
+            // Create the query to send to the database
+            string query = String.Format("INSERT INTO staff VALUES('{0}', '{1}', '{2}', '{3}', {4}, {5});", entry.firstName, entry.lastName, entry.phone, entry.admin, entry.dateEntered, entry.id);
+
+            Console.WriteLine(query);
+
+            // SendQuery returns a boolean, so we can check if it was successful
+            return SendQuery(query);
+            
+        }
+
+        internal bool Insert(Appointment entry)
+        {
+            // Create the query to send to the database
+            string query = String.Format("INSERT INTO appointment VALUES({0}, {1}, {2}, {3}, {4}, {5});", entry.appointmentDate, entry.patientID, entry.staffID, entry.treatmentID, entry.dateEntered, entry.id);
+
+            Console.WriteLine(query);
+
+            // SendQuery returns a boolean, so we can check if it was successful
+            return SendQuery(query);
+        }
+
+        internal bool Insert(Treatment entry)
+        {
+            // Create the query to send to the database
+            string query = string.Format("INSERT INTO treatments VALUES('{0}', '{1}', {2}, {3});", entry.treatmentTitle, entry.treatmentDescription,  entry.dateEntered, entry.id);
+
+            Console.WriteLine(query);
+
+            // SendQuery returns a boolean, so we can check if it was successful
+            return SendQuery(query);
+            
+        }
+        #endregion
+        #region Delete
+
+        #endregion
+        #endregion
 
         #region DB Objects   
         /// <summary>
@@ -100,45 +209,72 @@ namespace capstone
         /// The Personclass is to group Patients and Staff together for the purpose of security and ease.
         /// </summary>
         /// 
-        private class DBObject
+        internal class DBObject
         {
             internal string id = "NULL";
-            internal string dateEntered;
+            internal string dateEntered = "NULL";
         }
 
-        private class Person : DBObject
+        internal class Person : DBObject
         {
             internal string firstName;
-            internal string LastName;
+            internal string lastName;
             internal string phone;
-        }
 
-        private class Patient : Person
-        {
-            internal enum gender
+            public Person(string firstName, string lastName, string phone)
             {
-                Male,
-                Female
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.phone = phone;
             }
         }
 
-        private class Staff : Person
+        internal class Patient : Person
         {
-            internal string admin;
+            internal string gender;
+
+            public Patient(string gender, string firstName, string lastName, string phone) : base(firstName, lastName, phone)
+            {
+                this.gender = gender;
+            }
         }
 
-        private class Appointment : DBObject
+        internal class Staff : Person
+        {
+            internal string admin;
+
+            public Staff(string admin, string firstName, string lastName, string phone) : base(firstName, lastName, phone)
+            {
+                this.admin = admin;
+            }
+        }
+
+        internal class Appointment : DBObject
         {
             internal string appointmentDate;
             internal string patientID;
             internal string staffID;
-            internal string treatmentID;           
+            internal string treatmentID;
+            
+            public Appointment(string appointmentDate, string patientID, string staffID, string treatmentID)
+            {
+                this.appointmentDate = appointmentDate;
+                this.patientID = patientID;
+                this.staffID = staffID;
+                this.treatmentID = treatmentID;
+            }    
         }
 
-        private class Treatment : DBObject
+        internal class Treatment : DBObject
         {
             internal string treatmentTitle;
             internal string treatmentDescription;
+
+            public Treatment(string treatmentTitle, string treatmentDescription)
+            {
+                this.treatmentTitle = treatmentTitle;
+                this.treatmentDescription = treatmentDescription;
+            }
         }
         #endregion
     }
