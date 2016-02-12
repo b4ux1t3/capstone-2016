@@ -16,20 +16,20 @@ namespace capstone
         private string password;
         private string userName;
 
-        static void Main(string[] args)
-        {
-            DBConnector x = new DBConnector();
-            x.Initialize();
+        //static void Main(string[] args)
+        //{
+        //    DBConnector x = new DBConnector();
+        //    x.Initialize();
 
-            if (x.OpenConnection())
-            {
-                Console.WriteLine("Yay, it worked!\nPress any key to finish test.");
-                Console.Read();
-                x.CloseConnection();
-            }
-            Console.WriteLine("Reached end of main, press any key to exit program.");
-            Console.Read();
-        }
+        //    if (x.OpenConnection())
+        //    {
+        //        Console.WriteLine("Yay, it worked!\nPress any key to finish test.");
+        //        Console.Read();
+        //        x.CloseConnection();
+        //    }
+        //    Console.WriteLine("Reached end of main, press any key to exit program.");
+        //    Console.Read();
+        //}
 
         private void Initialize()
         {

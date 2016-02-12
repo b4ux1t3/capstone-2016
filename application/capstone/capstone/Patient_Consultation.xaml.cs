@@ -17,11 +17,23 @@ namespace capstone
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class WinPatientConsult : Window
     {
-        public Window1()
+        public WinPatientConsult()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void btnBrowse_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

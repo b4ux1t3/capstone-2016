@@ -17,11 +17,16 @@ namespace capstone
     /// <summary>
     /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class WinPatientTreatment : Window
     {
-        public Window2()
+        public WinPatientTreatment()
         {
             InitializeComponent();
+        }
+
+        private void btnApply_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
