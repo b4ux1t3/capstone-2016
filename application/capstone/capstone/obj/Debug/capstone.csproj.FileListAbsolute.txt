@@ -44,3 +44,7 @@ C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\c
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.csproj.GenerateResource.Cache
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.exe
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.pdb
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Home.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\WinHomeAdmin.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Home.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\WinHomeAdmin.baml

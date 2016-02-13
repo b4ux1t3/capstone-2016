@@ -17,6 +17,9 @@ namespace capstone
         
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
+
+            WinHomeAdmin winadmin = new WinHomeAdmin();
+            winadmin.Show();
             //Todo: Make this wire up to the home page, and change DBConnector.CheckLogIn so that it also returns whether or not the user is an admin.
             if (txtStaffID.Text != string.Empty && connector.CheckLogIn(txtStaffID.Text) >= 0)
             {

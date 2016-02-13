@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for WinHome.xaml
+    /// Interaction logic for WinHomeAdmin.xaml
     /// </summary>
-    public partial class WinHome : Window
+    public partial class WinHomeAdmin : Window
     {
-        public WinHome()
+        public WinHomeAdmin()
         {
             InitializeComponent();
         }
-
         private void btnPatients_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("It worked!");
@@ -40,6 +39,11 @@ namespace capstone
         }
 
         private void btnMedAdvice_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDBM_Click(object sender, RoutedEventArgs e)
         {
 
         }

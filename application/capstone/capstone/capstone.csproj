@@ -59,12 +59,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Reporting_Home.xaml.cs">
       <DependentUpon>Reporting_Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="Testing.xaml.cs">
       <DependentUpon>Testing.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WinHomeAdmin.xaml.cs">
+      <DependentUpon>WinHomeAdmin.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="LogInWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -91,6 +101,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Testing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinHomeAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

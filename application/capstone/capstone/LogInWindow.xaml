@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Log In" Height="350" Width="525">
+        Title="Log In" Height="350" Width="525" ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="txtStaffID" HorizontalAlignment="Left" Height="23" Margin="104,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="352,161,0,0" VerticalAlignment="Top" Width="75" Click="btnSubmit_Click"/>
