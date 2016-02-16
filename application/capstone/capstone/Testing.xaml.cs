@@ -29,11 +29,11 @@ namespace capstone
             DBConnector.Patient pat = new DBConnector.Patient("F", "Testia", "McTesterson", "(555) 555-5555");
             if (connector.Insert(pat))
             {
-                labInsertTest.Content = "Patient Test Successful! :)";
+                labInsertTest.Content = "Patient Insertion Test Successful! :)";
             }
             else
             {
-                labInsertTest.Content = "Patient Test Unsuccessful! :(";
+                labInsertTest.Content = "Patient Insertion Test Unsuccessful! :(";
             }
         }
 
@@ -42,11 +42,11 @@ namespace capstone
             DBConnector.Staff staff = new DBConnector.Staff("0", "Testy", "Testosterone", "5555555557");
             if (connector.Insert(staff))
             {
-                labInsertTest.Content = "Staff Test Successful! :)";
+                labInsertTest.Content = "Staff Insertion Test Successful! :)";
             }
             else
             {
-                labInsertTest.Content = "Staff Test Unsuccessful! :(";
+                labInsertTest.Content = "Staff  InsertionTest Unsuccessful! :(";
             }
         }
 
@@ -55,17 +55,65 @@ namespace capstone
             DBConnector.Treatment treat = new DBConnector.Treatment("Test", "Developer testing. If this shows up in production, the patient is screwed");
             if (connector.Insert(treat))
             {
-                labInsertTest.Content = "Treatment Test Successful! :)";
+                labInsertTest.Content = "Treatment Insertion Test Successful! :)";
             }
             else
             {
-                labInsertTest.Content = "Treatment Test Unsuccessful! :(";
+                labInsertTest.Content = "Treatment Insertion Test Unsuccessful! :(";
             }
         }
 
         private void btnInsertAppointment_Click(object sender, RoutedEventArgs e)
         {
             labInsertTest.Content = "I haven't figured out how I want to work with appoinments yet. Deal with it.";
+        }
+
+        private void btnDeletePatient_Click(object sender, RoutedEventArgs e)
+        {
+            if(connector.Delete(1, "patients", "patient_ID"))
+            {
+                labInsertTest.Content = "Patient Deletion Test Successful! :)";
+            }
+            else
+            {
+                labInsertTest.Content = "Patient Deletion Test Unsuccessful! :(";
+            }
+        }
+
+        private void btnDeleteStaff_Click(object sender, RoutedEventArgs e)
+        {
+            if (connector.Delete(1, "staff", "staff_ID"))
+            {
+                labInsertTest.Content = "Staff Deletion Test Successful! :)";
+            }
+            else
+            {
+                labInsertTest.Content = "Staff Deletion Test Unsuccessful! :(";
+            }
+        }
+
+        private void btnDeleteAppointment_Click(object sender, RoutedEventArgs e)
+        {
+            //if (connector.Delete(1, "appointments", "appointment_ID"))
+            //{
+            //    labInsertTest.Content = "Appointment Deletion Test Successful! :)";
+            //}
+            //else
+            //{
+            //    labInsertTest.Content = "Appointment Deletion Test Unsuccessful! :(";
+            //}
+        }
+
+        private void btnDeleteTreatment_Click(object sender, RoutedEventArgs e)
+        {
+            if (connector.Delete(1, "treatments", "treatment_ID"))
+            {
+                labInsertTest.Content = "Treatment Deletion Test Successful! :)";
+            }
+            else
+            {
+                labInsertTest.Content = "Treatment Deletion Test Unsuccessful! :(";
+            }
         }
     }
 }

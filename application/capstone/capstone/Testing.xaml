@@ -13,6 +13,11 @@
         <Button x:Name="btnInsertAppointment" Content="Appointment" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="75" Click="btnInsertAppointment_Click"/>
         <Button x:Name="btnInsertTreatment" Content="Treatment" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="75" Click="btnInsertTreatment_Click"/>
         <Label x:Name="labInsertTest" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,187,0,0" Height="72" Width="229"/>
+        <Label x:Name="labDelete" Content="Delete" HorizontalAlignment="Left" Margin="223,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDeletePatient" Content="Patient" HorizontalAlignment="Left" Margin="207,41,0,0" VerticalAlignment="Top" Width="75" Click="btnDeletePatient_Click"/>
+        <Button x:Name="btnDeleteStaff" Content="Staff" HorizontalAlignment="Left" Margin="207,66,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteStaff_Click"/>
+        <Button x:Name="btnDeleteAppointment" Content="Appointment" HorizontalAlignment="Left" Margin="207,91,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteAppointment_Click"/>
+        <Button x:Name="btnDeleteTreatment" Content="Treatment" HorizontalAlignment="Left" Margin="207,116,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteTreatment_Click"/>
 
 
     </Grid>

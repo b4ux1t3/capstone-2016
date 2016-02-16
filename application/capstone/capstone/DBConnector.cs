@@ -225,7 +225,22 @@ namespace capstone
         #endregion
         //Todo: Add delete functionality
         #region Delete
+        /// <summary>
+        /// Deletes an entry froma table.
+        /// </summary>
+        /// <param name="id">The ID for the entry that we want to delete</param>
+        /// <param name="table">The table from which we would like to delete the entry</param>
+        /// <param name="idField">The primary key for the table</param>
+        /// <returns>Whether the deletion was successful</returns>
+        internal bool Delete(int id, string table, string idField)
+        {
+            string query = string.Format("DELETE FROM {0} WHERE {1} = {2}", table, idField, id);
 
+            Console.WriteLine(query);
+
+            // SendNonQuery returns a boolean, so we can check if it was successful
+            return SendNonQuery(query);
+        }
         #endregion
 
         // This simply checks if the log in provided in the LogInWIndow is a valid entry
