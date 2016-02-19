@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
         Title="Window4" Height="505.714" Width="522.18">
-    <Grid Margin="0,0,0,3">
+    <Grid x:Name="winPatientLookup" Margin="0,0,0,3">
         <Label x:Name="label" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="21,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="txtFirstName_TextChanged"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="268,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" TextChanged="txtLastName_TextChanged"/>
