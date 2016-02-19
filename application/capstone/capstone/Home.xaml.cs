@@ -34,17 +34,23 @@ namespace capstone
 
         private void btnReporting_Click(object sender, RoutedEventArgs e)
         {
-
+            ReportingHome reporting = new ReportingHome();
+            reporting.Show();
+            this.Hide();
         }
 
         private void btnAppointments_Click(object sender, RoutedEventArgs e)
         {
-
+            AppointmentHome appointment = new AppointmentHome();
+            appointment.Show();
+            this.Hide();
         }
 
         private void btnMedAdvice_Click(object sender, RoutedEventArgs e)
         {
-
+            MedAdviceHome medAdvice = new MedAdviceHome();
+            medAdvice.Show();
+            this.Hide();
         }
     }
 }
