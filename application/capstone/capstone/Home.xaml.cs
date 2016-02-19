@@ -26,7 +26,10 @@ namespace capstone
 
         private void btnPatients_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("It worked!");
+            PatientHome patient = new PatientHome();
+            patient.Show();
+            this.Hide();
+          
         }
 
         private void btnReporting_Click(object sender, RoutedEventArgs e)

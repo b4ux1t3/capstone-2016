@@ -24,14 +24,11 @@ namespace capstone
             InitializeComponent();
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
+            var lookup = new PatientLookup(this);
+            lookup.Show();
+            this.Hide();
         }
     }
 }

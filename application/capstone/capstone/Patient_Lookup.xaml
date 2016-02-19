@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Window4" Height="505.714" Width="522.18">
+        Title="Patient Lookup" Height="505.714" Width="522.18">
     <Grid x:Name="winPatientLookup" Margin="0,0,0,3">
-        <Label x:Name="label" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <!--<Label x:Name="label" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="21,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="txtFirstName_TextChanged"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="268,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" TextChanged="txtLastName_TextChanged"/>
         <TextBox x:Name="txtBDayMonth" HorizontalAlignment="Left" Height="23" Margin="21,126,0,0" TextWrapping="Wrap" Text="MM" VerticalAlignment="Top" Width="31" TextChanged="txtBDayMonth_TextChanged"/>
@@ -31,7 +31,7 @@
         <Label x:Name="label10" Content="Address" HorizontalAlignment="Left" Margin="330,242,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label11" Content="Patient's Insurance Information" HorizontalAlignment="Left" Margin="14,293,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="drpInsurance" HorizontalAlignment="Left" Margin="55,357,0,0" VerticalAlignment="Top" Width="389" SelectionChanged="drpInsurance_SelectionChanged"/>
-        <Label x:Name="label12" Content="Insurance Name" HorizontalAlignment="Left" Margin="204,384,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label12" Content="Insurance Name" HorizontalAlignment="Left" Margin="204,384,0,0" VerticalAlignment="Top"/>-->
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="172,440,0,0" VerticalAlignment="Top" Width="160" Height="22" Click="btnSubmit_Click"/>
 
     </Grid>

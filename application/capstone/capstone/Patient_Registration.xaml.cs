@@ -24,69 +24,69 @@ namespace capstone
             InitializeComponent();
         }
 
-        private void txtFirstName_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtFirstName_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtLastName_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtLastName_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtBDayMonth_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtBDayMonth_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtBDayDay_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtBDayDay_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtBDayYear_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtBDayYear_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void radbtnMale_Checked(object sender, RoutedEventArgs e)
-        {
+        //private void radbtnMale_Checked(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void radbtnFemale_Checked(object sender, RoutedEventArgs e)
-        {
+        //private void radbtnFemale_Checked(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtArea_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtArea_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtSwitch_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtSwitch_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtLine_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtLine_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void txtAddress_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        //private void txtAddress_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void drpInsurance_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+        //private void drpInsurance_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void btnSubmit_Click(object sender, RoutedEventArgs e)
-        {
+        //private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
     }
 }

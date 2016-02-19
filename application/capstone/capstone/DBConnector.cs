@@ -35,7 +35,7 @@ namespace capstone
         private void Initialize()
         {
             Console.WriteLine("Entered Initialize");
-            server = "192.168.1.9";
+            server = "192.168.1.12";
             database = "capstone";
             password = "java see sharp myess queue ell";
             userName = "application";
@@ -275,6 +275,45 @@ namespace capstone
                 result = -1;
             }
             return result;
+        }
+
+        internal bool CheckAdminStatus(string ID)
+        {
+            if (this.OpenConnection())
+            {
+
+                try
+                {
+                    string query = string.Format("SELECT admin FROM staff WHERE staff_ID = {0};", ID);
+
+                    // Create command and assign the query and connection from the constructor
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                    //Create a reader to get the data from the database
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    int result = Convert.ToInt32(reader["admin"]);
+
+                    if (result == 0)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    Console.WriteLine(ex.StackTrace);
+                    return false;
+                }
+                finally
+                {
+                    this.CloseConnection();
+                }
+            }
+            return false;
         }
         #endregion
 

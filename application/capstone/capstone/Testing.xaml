@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Testing" Height="300" Width="300">
+        Title="Testing" Height="660.241" Width="787.952">
     <Grid>
         <Label x:Name="labInsert" Content="Insert" HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnInsertPatient" Content="Patient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,41,0,0" Click="btnInsertPatient_Click"/>
@@ -18,6 +18,7 @@
         <Button x:Name="btnDeleteStaff" Content="Staff" HorizontalAlignment="Left" Margin="207,66,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteStaff_Click"/>
         <Button x:Name="btnDeleteAppointment" Content="Appointment" HorizontalAlignment="Left" Margin="207,91,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteAppointment_Click"/>
         <Button x:Name="btnDeleteTreatment" Content="Treatment" HorizontalAlignment="Left" Margin="207,116,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteTreatment_Click"/>
+        
 
 
     </Grid>

@@ -17,15 +17,25 @@ namespace capstone
         
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-
-            WinHomeAdmin winadmin = new WinHomeAdmin();
-            winadmin.Show();
             //Todo: Make this wire up to the home page, and change DBConnector.CheckLogIn so that it also returns whether or not the user is an admin.
-            if (txtStaffID.Text != string.Empty && connector.CheckLogIn(txtStaffID.Text) >= 0)
+            if (txtStaffID.Text == string.Empty)
             {
-                Testing test = new Testing();
-                test.Show();
-                this.Close();
+                MessageBox.Show("Please enter a valid Staff ID!");
+            }
+            else if (connector.CheckLogIn(txtStaffID.Text) >= 0)
+            {
+                if (connector.CheckAdminStatus(txtStaffID.Text))
+                {
+                    WinHomeAdmin adminWindow = new WinHomeAdmin();
+                    adminWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    WinHome homeWindow = new WinHome();
+                    homeWindow.Show();
+                    this.Close();
+                }
             }
             else if (connector.CheckLogIn(txtStaffID.Text) <= 0)
             {
@@ -33,7 +43,7 @@ namespace capstone
             }
             else
             {
-                MessageBox.Show("Please enter a valid Staff ID!");
+                
             }
         }
     }

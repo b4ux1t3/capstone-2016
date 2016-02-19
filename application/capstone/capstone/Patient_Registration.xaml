@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Window5" Height="524.436" Width="516.541">
     <Grid Margin="0,0,0,4">
-        <Label x:Name="label" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <!--<Label x:Name="label" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="21,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="txtFirstName_TextChanged"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="268,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" TextChanged="txtLastName_TextChanged"/>
@@ -33,7 +33,7 @@
         <Label x:Name="label11" Content="Patient's Insurance Information" HorizontalAlignment="Left" Margin="14,293,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="drpInsurance" HorizontalAlignment="Left" Margin="55,357,0,-24" VerticalAlignment="Top" Width="389" SelectionChanged="drpInsurance_SelectionChanged"/>
         <Label x:Name="label12" Content="Insurance Name" HorizontalAlignment="Left" Margin="204,384,0,-55" VerticalAlignment="Top"/>
-        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="172,440,0,-107" VerticalAlignment="Top" Width="160" Height="22" Click="btnSubmit_Click"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="172,440,0,-107" VerticalAlignment="Top" Width="160" Height="22" Click="btnSubmit_Click"/>-->
 
     </Grid>
 </Window>

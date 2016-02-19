@@ -59,8 +59,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Appointments.xaml.cs">
+      <DependentUpon>Appointments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DBReport.xaml.cs">
+      <DependentUpon>DBReport.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MedAdviceHome.xaml.cs">
+      <DependentUpon>MedAdviceHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Home.xaml.cs">
+      <DependentUpon>Patient_Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Lookup.xaml.cs">
+      <DependentUpon>Patient_Lookup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Registration.xaml.cs">
+      <DependentUpon>Patient_Registration.xaml</DependentUpon>
     </Compile>
     <Compile Include="Reporting_Home.xaml.cs">
       <DependentUpon>Reporting_Home.xaml</DependentUpon>
@@ -68,9 +86,20 @@
     <Compile Include="Testing.xaml.cs">
       <DependentUpon>Testing.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DBMWindow.xaml.cs">
+      <DependentUpon>DBMWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WinHomeAdmin.xaml.cs">
       <DependentUpon>WinHomeAdmin.xaml</DependentUpon>
     </Compile>
+    <Page Include="Appointments.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DBReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Home.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -88,6 +117,10 @@
       <DependentUpon>LogInWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MedAdviceHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Patient_Consultation.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,11 +129,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Patient_Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Patient_Lookup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Patient_Registration.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Reporting_Home.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Testing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DBMWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

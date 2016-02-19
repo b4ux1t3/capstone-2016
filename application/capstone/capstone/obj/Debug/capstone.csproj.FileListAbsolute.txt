@@ -48,3 +48,17 @@ C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Hom
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\WinHomeAdmin.g.cs
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Home.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\WinHomeAdmin.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBMWindow.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBMWindow.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Appointments.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\MedAdviceHome.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Home.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Appointments.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\MedAdviceHome.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Home.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBReport.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Lookup.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Registration.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBReport.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Lookup.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Registration.baml

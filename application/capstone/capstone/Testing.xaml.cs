@@ -46,7 +46,7 @@ namespace capstone
             }
             else
             {
-                labInsertTest.Content = "Staff  InsertionTest Unsuccessful! :(";
+                labInsertTest.Content = "Staff  Insertion Test Unsuccessful! :(";
             }
         }
 
