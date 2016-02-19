@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for Window4.xaml
+    /// Interaction logic for PatientLookup.xaml
     /// </summary>
-    public partial class Window4 : Window
+    public partial class PatientLookup : Window
     {
-        public Window4()
+        public PatientLookup()
         {
             InitializeComponent();
         }
