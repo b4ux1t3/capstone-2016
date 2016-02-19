@@ -28,7 +28,9 @@ namespace capstone
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
-
+            PatientLookup lookup = new PatientLookup(this);
+            lookup.Show();
+            this.Hide();
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
