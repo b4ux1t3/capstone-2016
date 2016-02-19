@@ -17,9 +17,9 @@ namespace capstone
     /// <summary>
     /// Interaction logic for Window3.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class ReportingHome : Window
     {
-        public Window3()
+        public ReportingHome()
         {
             InitializeComponent();
         }
