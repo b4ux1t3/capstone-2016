@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\App.xaml
-141306831379
+15-1020131418
 
-23-447474062
+24-1782996298
 14189691710
-Appointments.xaml;DBReport.xaml;Home.xaml;LogInWindow.xaml;MedAdviceHome.xaml;Patient_Consultation.xaml;Patient_ConsultTreatments.xaml;Patient_Home.xaml;Patient_Lookup.xaml;Patient_Registration.xaml;Reporting_Home.xaml;Testing.xaml;DBMWindow.xaml;WinHomeAdmin.xaml;
+Appointments.xaml;DBReport.xaml;Main.xaml;LogInWindow.xaml;MedAdviceHome.xaml;MedAdviceText.xaml;Patient_Consultation.xaml;Patient_ConsultTreatments.xaml;Patient_Home.xaml;Patient_Lookup.xaml;Patient_Registration.xaml;Reporting_Home.xaml;Testing.xaml;DBMWindow.xaml;TestLogIn.xaml;
 
-False
+True
 

@@ -44,10 +44,6 @@ C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\c
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.csproj.GenerateResource.Cache
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.exe
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.pdb
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Home.g.cs
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\WinHomeAdmin.g.cs
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Home.baml
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\WinHomeAdmin.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBMWindow.g.cs
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBMWindow.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Appointments.g.cs
@@ -62,3 +58,9 @@ C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Pat
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBReport.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Lookup.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Registration.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\MedAdviceText.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\MedAdviceText.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\TestLogIn.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\TestLogIn.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Main.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Main.baml

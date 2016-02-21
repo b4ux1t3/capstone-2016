@@ -19,9 +19,12 @@ namespace capstone
     /// </summary>
     public partial class AppointmentHome : Window
     {
-        public AppointmentHome()
+        Window HomeWindow;
+        public AppointmentHome(Window sourceWindow)
         {
             InitializeComponent();
+
+            this.HomeWindow = sourceWindow;
         }
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -31,7 +34,9 @@ namespace capstone
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
-
+            PatientLookup lookup = new PatientLookup(this);
+            lookup.Show();
+            this.Hide();
         }
 
         private void drpDoctor_SelectionChanged(object sender, SelectionChangedEventArgs e)

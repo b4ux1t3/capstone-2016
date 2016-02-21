@@ -15,13 +15,16 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for Window3.xaml
+    /// Interaction logic for ReportingHome.xaml
     /// </summary>
     public partial class ReportingHome : Window
     {
-        public ReportingHome()
+        internal Window HomeWindow;
+
+        public ReportingHome(Window sourceWindow)
         {
             InitializeComponent();
+            this.HomeWindow = sourceWindow;
         }
     }
 }

@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for DBMWindow.xaml
     /// </summary>
     public partial class WinDBM : Window
     {
-        public WinDBM()
+        internal Window HomeWindow;
+
+        /// <summary>
+        /// Constructor for the Database Management Window
+        /// </summary>
+        /// <param name="sourceWindow">The window from which this window was accessed</param>
+        public WinDBM(Window sourceWindow)
         {
             InitializeComponent();
+            this.HomeWindow = sourceWindow;
         }
     }
 }

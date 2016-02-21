@@ -15,18 +15,20 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for MedAdviceHome.xaml
     /// </summary>
     public partial class MedAdviceHome : Window
     {
-        public MedAdviceHome()
+        internal Window HomeWindow;
+        public MedAdviceHome(Window sourceWindow)
         {
             InitializeComponent();
+            this.HomeWindow = sourceWindow;
         }
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
-            var lookup = new PatientLookup(this);
+            PatientLookup lookup = new PatientLookup(this);
             lookup.Show();
             this.Hide();
         }

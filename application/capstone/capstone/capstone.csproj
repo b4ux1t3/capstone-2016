@@ -65,11 +65,14 @@
     <Compile Include="DBReport.xaml.cs">
       <DependentUpon>DBReport.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
+    <Compile Include="Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="MedAdviceHome.xaml.cs">
       <DependentUpon>MedAdviceHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MedAdviceText.xaml.cs">
+      <DependentUpon>MedAdviceText.xaml</DependentUpon>
     </Compile>
     <Compile Include="Patient_Home.xaml.cs">
       <DependentUpon>Patient_Home.xaml</DependentUpon>
@@ -89,8 +92,8 @@
     <Compile Include="DBMWindow.xaml.cs">
       <DependentUpon>DBMWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WinHomeAdmin.xaml.cs">
-      <DependentUpon>WinHomeAdmin.xaml</DependentUpon>
+    <Compile Include="TestLogIn.xaml.cs">
+      <DependentUpon>TestLogIn.xaml</DependentUpon>
     </Compile>
     <Page Include="Appointments.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -100,7 +103,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Home.xaml">
+    <Page Include="Main.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -118,6 +121,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MedAdviceHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MedAdviceText.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -153,7 +160,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WinHomeAdmin.xaml">
+    <Page Include="TestLogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

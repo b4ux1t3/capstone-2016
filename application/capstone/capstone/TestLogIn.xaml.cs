@@ -15,31 +15,25 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for Patient_Home.xaml
+    /// Interaction logic for TestLogIn.xaml
     /// </summary>
-    public partial class PatientHome : Window
+    public partial class TestLogIn : Window
     {
-       internal  Window HomeWindow;
-
-        public PatientHome(Window sourceWindow)
+        public TestLogIn()
         {
             InitializeComponent();
-            this.HomeWindow = sourceWindow;
         }
 
-        private void btnConsultation_Click(object sender, RoutedEventArgs e)
+        private void btnNonAdmin_Click(object sender, RoutedEventArgs e)
         {
-
+            Main home = new Main(false, 123, new DBConnector());
+            home.Show();
         }
 
-        private void btnPatientLookup_Click(object sender, RoutedEventArgs e)
+        private void btnAdmin_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void btnNewPatientReg_Click(object sender, RoutedEventArgs e)
-        {
-
+            Main home = new Main(true, 123, new DBConnector());
+            home.Show();
         }
     }
 }

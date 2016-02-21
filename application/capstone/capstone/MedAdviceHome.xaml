@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Window1" Height="546.694" Width="1092.26">
+        Title="Medical Advice" Height="546.694" Width="1092.26">
     <Grid>
         <Button x:Name="Home" Content="Home" HorizontalAlignment="Left" Height="31" Margin="10,10,0,0" VerticalAlignment="Top" Width="60"/>
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Height="31" Margin="1010,10,0,0" VerticalAlignment="Top" Width="64"/>

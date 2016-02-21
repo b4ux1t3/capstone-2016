@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace capstone
@@ -8,7 +9,7 @@ namespace capstone
     /// </summary>
     public partial class WinLogIn : Window
     {
-        DBConnector connector = new DBConnector();
+        internal DBConnector connector = new DBConnector();
 
         public WinLogIn()
         {
@@ -17,7 +18,6 @@ namespace capstone
         
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            //Todo: Make this wire up to the home page, and change DBConnector.CheckLogIn so that it also returns whether or not the user is an admin.
             if (txtStaffID.Text == string.Empty)
             {
                 MessageBox.Show("Please enter a valid Staff ID!");
@@ -26,13 +26,13 @@ namespace capstone
             {
                 if (connector.CheckAdminStatus(txtStaffID.Text))
                 {
-                    WinHomeAdmin adminWindow = new WinHomeAdmin();
+                    Main adminWindow = new Main(true, Convert.ToInt32(txtStaffID.Text), connector);
                     adminWindow.Show();
                     this.Close();
                 }
                 else
                 {
-                    WinHome homeWindow = new WinHome();
+                    Main homeWindow = new Main(false, Convert.ToInt32(txtStaffID.Text), connector);
                     homeWindow.Show();
                     this.Close();
                 }

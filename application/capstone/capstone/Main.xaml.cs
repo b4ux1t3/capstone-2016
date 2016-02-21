@@ -15,18 +15,31 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for WinHome.xaml
+    /// Interaction logic for Main.xaml
     /// </summary>
-    public partial class WinHome : Window
+    public partial class Main : Window
     {
-        public WinHome()
+        internal int UserID;
+
+        internal DBConnector Connector;
+
+        internal Main(bool isAdmin, int userID, DBConnector connector)
         {
             InitializeComponent();
+
+            if (isAdmin)
+            {
+                btnDBM.IsEnabled = true;
+            }
+
+            this.UserID = userID;
+
+            this.Connector = connector;
         }
 
         private void btnPatients_Click(object sender, RoutedEventArgs e)
         {
-            PatientHome patient = new PatientHome();
+            PatientHome patient = new PatientHome(this);
             patient.Show();
             this.Hide();
           
@@ -34,22 +47,29 @@ namespace capstone
 
         private void btnReporting_Click(object sender, RoutedEventArgs e)
         {
-            ReportingHome reporting = new ReportingHome();
+            ReportingHome reporting = new ReportingHome(this);
             reporting.Show();
             this.Hide();
         }
 
         private void btnAppointments_Click(object sender, RoutedEventArgs e)
         {
-            AppointmentHome appointment = new AppointmentHome();
+            AppointmentHome appointment = new AppointmentHome(this);
             appointment.Show();
             this.Hide();
         }
 
         private void btnMedAdvice_Click(object sender, RoutedEventArgs e)
         {
-            MedAdviceHome medAdvice = new MedAdviceHome();
+            MedAdviceHome medAdvice = new MedAdviceHome(this);
             medAdvice.Show();
+            this.Hide();
+        }
+
+        private void btnDBM_Click(object sender, RoutedEventArgs e)
+        {
+            WinDBM dbm = new WinDBM(this);
+            dbm.Show();
             this.Hide();
         }
     }
