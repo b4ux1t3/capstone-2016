@@ -9,7 +9,7 @@ namespace capstone
     /// </summary>
     public partial class WinLogIn : Window
     {
-        internal DBConnector connector = new DBConnector();
+        internal DBConnector Connector;
 
         public WinLogIn()
         {
@@ -22,22 +22,22 @@ namespace capstone
             {
                 MessageBox.Show("Please enter a valid Staff ID!");
             }
-            else if (connector.CheckLogIn(txtStaffID.Text) >= 0)
+            else if (Connector.CheckLogIn(txtStaffID.Text) >= 0)
             {
-                if (connector.CheckAdminStatus(txtStaffID.Text))
+                if (Connector.CheckAdminStatus(txtStaffID.Text))
                 {
-                    Main adminWindow = new Main(true, Convert.ToInt32(txtStaffID.Text), connector);
+                    Main adminWindow = new Main(true, Convert.ToInt32(txtStaffID.Text), Connector);
                     adminWindow.Show();
                     this.Close();
                 }
                 else
                 {
-                    Main homeWindow = new Main(false, Convert.ToInt32(txtStaffID.Text), connector);
+                    Main homeWindow = new Main(false, Convert.ToInt32(txtStaffID.Text), Connector);
                     homeWindow.Show();
                     this.Close();
                 }
             }
-            else if (connector.CheckLogIn(txtStaffID.Text) <= 0)
+            else if (Connector.CheckLogIn(txtStaffID.Text) <= 0)
             {
                 MessageBox.Show("Unable to connect to Database. Contact your administrator.");
             }
@@ -45,6 +45,14 @@ namespace capstone
             {
                 
             }
+        }
+
+        private void btnServer_Click(object sender, RoutedEventArgs e)
+        {
+            ServerConfig serv = new ServerConfig(this);
+            serv.Show();
+            this.Hide();
+
         }
     }
 }

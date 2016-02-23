@@ -11,10 +11,10 @@ namespace capstone
     class DBConnector
     {
         internal MySqlConnection connection;
-        private string server;
-        private string database;
-        private string password;
-        private string userName;
+        private string Server;
+        private string Database;
+        private string Password;
+        private string UserName;
 
         // Just in case we need this for testing.
         //static void Main(string[] args)
@@ -32,18 +32,24 @@ namespace capstone
         //    Console.Read();
         //}
 
+        public DBConnector(string server, string database, string username, string password)
+        {
+            this.Server = server;
+            this.Database = database;
+            this.UserName = username;
+            this.Password = password;
+        }
+
         private void Initialize()
         {
             Console.WriteLine("Entered Initialize");
-            server = "192.168.1.12";
-            database = "capstone";
-            password = "java see sharp myess queue ell";
-            userName = "application";
-            string connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-        database + ";" + "UID=" + userName + ";" + "PASSWORD=" + password + ";";
+            
+            string connectionString = "SERVER=" + this.Server + ";" + "DATABASE=" +
+        this.Database + ";" + "UID=" + this.UserName + ";" + "PASSWORD=" + this.Password + ";";
 
             try
             {
+                Console.WriteLine(connectionString);
                 connection = new MySqlConnection(connectionString);
             }
             catch (MySqlException ex)

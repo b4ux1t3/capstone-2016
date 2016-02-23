@@ -10,6 +10,7 @@
         <TextBox x:Name="txtStaffID" HorizontalAlignment="Left" Height="23" Margin="104,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="352,161,0,0" VerticalAlignment="Top" Width="75" Click="btnSubmit_Click"/>
         <Label x:Name="labStaffID" Content="Staff ID:" HorizontalAlignment="Left" Margin="48,155,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnServer" Content="Server Config" HorizontalAlignment="Left" Margin="434,291,0,0" VerticalAlignment="Top" Width="75" Click="btnServer_Click"/>
 
     </Grid>
 </Window>

@@ -34,7 +34,9 @@ namespace capstone
 
         private void btnPatientLookup_Click(object sender, RoutedEventArgs e)
         {
-
+            PatientLookup lookup = new PatientLookup(this);
+            lookup.Show();
+            this.Hide();
         }
 
         private void btnNewPatientReg_Click(object sender, RoutedEventArgs e)

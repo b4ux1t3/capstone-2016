@@ -86,14 +86,11 @@
     <Compile Include="Reporting_Home.xaml.cs">
       <DependentUpon>Reporting_Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Testing.xaml.cs">
-      <DependentUpon>Testing.xaml</DependentUpon>
+    <Compile Include="ServerConfig.xaml.cs">
+      <DependentUpon>ServerConfig.xaml</DependentUpon>
     </Compile>
     <Compile Include="DBMWindow.xaml.cs">
       <DependentUpon>DBMWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TestLogIn.xaml.cs">
-      <DependentUpon>TestLogIn.xaml</DependentUpon>
     </Compile>
     <Page Include="Appointments.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -152,15 +149,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Testing.xaml">
+    <Page Include="ServerConfig.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DBMWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TestLogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
