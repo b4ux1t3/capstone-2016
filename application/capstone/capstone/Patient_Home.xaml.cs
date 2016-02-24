@@ -19,9 +19,9 @@ namespace capstone
     /// </summary>
     public partial class PatientHome : Window
     {
-       internal  Window HomeWindow;
+       internal  Main HomeWindow;
 
-        public PatientHome(Window sourceWindow)
+        public PatientHome(Main sourceWindow)
         {
             InitializeComponent();
             this.HomeWindow = sourceWindow;
@@ -39,9 +39,9 @@ namespace capstone
             this.Hide();
         }
 
-        private void btnNewPatientReg_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void btnNewPatientReg_Click(object sender, RoutedEventArgs .
+            register.Show();
+            this.Close();
         }
     }
 }

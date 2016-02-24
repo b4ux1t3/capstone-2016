@@ -26,13 +26,13 @@ namespace capstone
 
         private void btnNonAdmin_Click(object sender, RoutedEventArgs e)
         {
-            Main home = new Main(false, 123, new DBConnector());
+            Main home = new Main(false, 123, new DBConnector("","","",""));
             home.Show();
         }
 
         private void btnAdmin_Click(object sender, RoutedEventArgs e)
         {
-            Main home = new Main(true, 123, new DBConnector());
+            Main home = new Main(true, 123, new DBConnector("", "", "", ""));
             home.Show();
         }
     }

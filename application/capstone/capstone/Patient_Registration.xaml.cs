@@ -15,78 +15,21 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for Window5.xaml
+    /// Interaction logic for Patient_Registration.xaml
     /// </summary>
-    public partial class Window5 : Window
+    public partial class PatientRegistration : Window
     {
-        public Window5()
+        internal Main MainWindow;
+        internal PatientRegistration(Main main)
         {
             InitializeComponent();
+            this.MainWindow = main;
         }
 
-        //private void txtFirstName_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtLastName_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtBDayMonth_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtBDayDay_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtBDayYear_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void radbtnMale_Checked(object sender, RoutedEventArgs e)
-        //{
-
-        //}
-
-        //private void radbtnFemale_Checked(object sender, RoutedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtArea_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtSwitch_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtLine_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void txtAddress_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void drpInsurance_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-
-        //}
-
-        //private void btnSubmit_Click(object sender, RoutedEventArgs e)
-        //{
-
-        //}
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            DBConnector.Patient newPatient = new DBConnector.Patient("F", "Test", "test", "1800test000");
+            MainWindow.Connector.Insert(newPatient);
+        }
     }
 }

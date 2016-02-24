@@ -92,6 +92,9 @@
     <Compile Include="DBMWindow.xaml.cs">
       <DependentUpon>DBMWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TestLogIn.xaml.cs">
+      <DependentUpon>TestLogIn.xaml</DependentUpon>
+    </Compile>
     <Page Include="Appointments.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -156,6 +159,10 @@
     <Page Include="DBMWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestLogIn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

@@ -20,7 +20,6 @@ C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\cap
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.csproj.GenerateResource.Cache
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.exe
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\capstone.pdb
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Testing.baml
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\bin\Debug\capstone.exe
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\bin\Debug\capstone.pdb
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\bin\Debug\MySql.Data.dll
@@ -59,8 +58,9 @@ C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Pat
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Patient_Registration.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\MedAdviceText.g.cs
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\MedAdviceText.baml
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\TestLogIn.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Main.g.cs
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\Main.baml
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\ServerConfig.g.cs
 C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\ServerConfig.baml
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\TestLogIn.g.cs
+C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\TestLogIn.baml

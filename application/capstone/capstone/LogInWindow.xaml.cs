@@ -18,32 +18,39 @@ namespace capstone
         
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            if (txtStaffID.Text == string.Empty)
+            try
             {
-                MessageBox.Show("Please enter a valid Staff ID!");
-            }
-            else if (Connector.CheckLogIn(txtStaffID.Text) >= 0)
-            {
-                if (Connector.CheckAdminStatus(txtStaffID.Text))
+                if (txtStaffID.Text == string.Empty)
                 {
-                    Main adminWindow = new Main(true, Convert.ToInt32(txtStaffID.Text), Connector);
-                    adminWindow.Show();
-                    this.Close();
+                    MessageBox.Show("Please enter a valid Staff ID!");
+                }
+                else if (Connector.CheckLogIn(txtStaffID.Text) >= 0)
+                {
+                    if (Connector.CheckAdminStatus(txtStaffID.Text))
+                    {
+                        Main adminWindow = new Main(true, Convert.ToInt32(txtStaffID.Text), Connector);
+                        adminWindow.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        Main homeWindow = new Main(false, Convert.ToInt32(txtStaffID.Text), Connector);
+                        homeWindow.Show();
+                        this.Close();
+                    }
+                }
+                else if (Connector.CheckLogIn(txtStaffID.Text) <= 0)
+                {
+                    MessageBox.Show("Unable to connect to Database. Contact your administrator.");
                 }
                 else
                 {
-                    Main homeWindow = new Main(false, Convert.ToInt32(txtStaffID.Text), Connector);
-                    homeWindow.Show();
-                    this.Close();
+
                 }
-            }
-            else if (Connector.CheckLogIn(txtStaffID.Text) <= 0)
+            } catch (NullReferenceException ex)
             {
-                MessageBox.Show("Unable to connect to Database. Contact your administrator.");
-            }
-            else
-            {
-                
+                Console.WriteLine(ex.Message);
+                MessageBox.Show("Have you entered server information?");
             }
         }
 
