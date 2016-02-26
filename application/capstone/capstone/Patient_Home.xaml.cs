@@ -39,7 +39,9 @@ namespace capstone
             this.Hide();
         }
 
-        private void btnNewPatientReg_Click(object sender, RoutedEventArgs .
+        private void btnNewPatientReg_Click(object sender, RoutedEventArgs e)
+        {
+            PatientRegistration register = new PatientRegistration(this.HomeWindow); 
             register.Show();
             this.Close();
         }
