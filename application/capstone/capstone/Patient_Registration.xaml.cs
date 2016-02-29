@@ -27,9 +27,44 @@ namespace capstone
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
-        {
-            DBConnector.Patient newPatient = new DBConnector.Patient("F", "Test", "test", "1800test000");
-            MainWindow.Connector.Insert(newPatient);
+        { 
+            if ((txtAddress.Text != String.Empty &&
+                txtArea.Text != String.Empty && 
+                txtBDayDay.Text != String.Empty && 
+                txtBDayMonth.Text != String.Empty && 
+                txtBDayYear.Text != String.Empty && 
+                txtFirstName.Text != String.Empty && 
+                txtLine.Text != String.Empty && 
+                txtSwitch.Text != String.Empty && 
+                txtLastName.Text != String.Empty && 
+                txtInsurance.Text != String.Empty) 
+                && 
+                (Convert.ToBoolean(radbtnFemale.IsChecked) || Convert.ToBoolean(radbtnMale.IsChecked)))
+            {
+                string gender;
+                string firstName = txtFirstName.Text;
+                string lastName = txtLastName.Text;
+                string phone = txtArea.Text + txtSwitch.Text + txtLine.Text;
+                string insurance = txtInsurance.Text;
+                string birthday = txtBDayMonth.Text + "/" + txtBDayDay.Text + "/" + txtBDayYear.Text;
+                string address = txtAddress.Text;
+
+                if (Convert.ToBoolean(radbtnFemale.IsChecked))
+                {
+                    gender = "F";
+                }
+                else
+                {
+                    gender = "M";
+                }
+                DBConnector.Patient newPatient = new DBConnector.Patient(gender, firstName, lastName, phone, insurance, birthday, address);
+                MainWindow.Connector.Insert(newPatient);
+            }
+            else
+            {
+                MessageBox.Show("Please make sure all of teh information is filled out. Stop trying to break things.");
+            }
+            
         }
     }
 }

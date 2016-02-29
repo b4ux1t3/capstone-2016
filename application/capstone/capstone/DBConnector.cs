@@ -186,7 +186,7 @@ namespace capstone
         {
             
             // Create the query to send to the database
-            string query = String.Format("INSERT INTO patients VALUES('{0}', '{1}', '{2}', '{3}', {4}, {5});", entry.firstName, entry.lastName, entry.phone, entry.gender, entry.dateEntered, entry.id);
+            string query = String.Format("INSERT INTO patients VALUES('{0}', '{1}', '{2}', '{3}', {4}, {5}, '{6}', '{7}', '{8}');", entry.firstName, entry.lastName, entry.phone, entry.gender, entry.dateEntered, entry.id, entry.insurance, entry.birthdate, entry.address);
 
             Console.WriteLine(query);
 
@@ -379,10 +379,16 @@ namespace capstone
         internal class Patient : Person
         {
             internal string gender;
+            internal string insurance;
+            internal string birthdate;
+            internal string address;
 
-            public Patient(string gender, string firstName, string lastName, string phone) : base(firstName, lastName, phone)
+            public Patient(string gender, string firstName, string lastName, string phone, string insurance, string birthdate, string address) : base(firstName, lastName, phone)
             {
                 this.gender = gender;
+                this.insurance = insurance;
+                this.birthdate = birthdate;
+                this.address = address;
             }
         }
 

@@ -31,9 +31,9 @@
         <Label x:Name="label9" Content="Last Name" HorizontalAlignment="Left" Margin="339,86,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label10" Content="Address" HorizontalAlignment="Left" Margin="330,242,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label11" Content="Patient's Insurance Information" HorizontalAlignment="Left" Margin="14,293,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="drpInsurance" HorizontalAlignment="Left" Margin="55,357,0,-24" VerticalAlignment="Top" Width="389"/>
         <Label x:Name="label12" Content="Insurance Name" HorizontalAlignment="Left" Margin="204,384,0,-55" VerticalAlignment="Top"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="172,440,0,-107" VerticalAlignment="Top" Width="160" Height="22" Click="btnSubmit_Click"/>
+        <TextBox x:Name="txtInsurance" HorizontalAlignment="Left" Height="23" Margin="120,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297"/>
 
     </Grid>
 </Window>
