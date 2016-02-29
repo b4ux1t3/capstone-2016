@@ -84,3 +84,6 @@ C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\P
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\ServerConfig.baml
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\DBMWindow.baml
 C:\Users\Student\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\TestLogIn.baml
+D:\capstone-2016\application\capstone\capstone\bin\Debug\capstone.exe.config
+D:\capstone-2016\application\capstone\capstone\obj\Debug\capstone.exe
+D:\capstone-2016\application\capstone\capstone\obj\Debug\capstone.pdb

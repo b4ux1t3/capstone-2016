@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\obj\Debug\
+D:\capstone-2016\application\capstone\capstone\obj\Debug\
 capstone
 none
 false
 DEBUG;TRACE
-C:\Users\b4ux1\Desktop\capstone-2016\application\capstone\capstone\App.xaml
-15-954200145
+D:\capstone-2016\application\capstone\capstone\App.xaml
+16-1970924469
 
-24-600770905
-14189691710
-Appointments.xaml;DBReport.xaml;Main.xaml;LogInWindow.xaml;MedAdviceHome.xaml;MedAdviceText.xaml;Patient_Consultation.xaml;Patient_ConsultTreatments.xaml;Patient_Home.xaml;Patient_Lookup.xaml;Patient_Registration.xaml;Reporting_Home.xaml;ServerConfig.xaml;DBMWindow.xaml;TestLogIn.xaml;
+25-1680390246
+14156089749
+Appointments.xaml;DBReport.xaml;Main.xaml;LogInWindow.xaml;MedAdviceHome.xaml;MedAdviceText.xaml;NewStaff.xaml;Patient_Consultation.xaml;Patient_ConsultTreatments.xaml;Patient_Home.xaml;Patient_Lookup.xaml;Patient_Registration.xaml;Reporting_Home.xaml;ServerConfig.xaml;DBMWindow.xaml;TestLogIn.xaml;
 
 False
 
