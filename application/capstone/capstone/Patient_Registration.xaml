@@ -33,7 +33,7 @@
         <Label x:Name="label11" Content="Patient's Insurance Information" HorizontalAlignment="Left" Margin="14,293,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label12" Content="Insurance Name" HorizontalAlignment="Left" Margin="204,384,0,-55" VerticalAlignment="Top"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="172,440,0,-107" VerticalAlignment="Top" Width="160" Height="22" Click="btnSubmit_Click"/>
-        <TextBox x:Name="txtInsurance" HorizontalAlignment="Left" Height="23" Margin="120,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297"/>
+        <TextBox x:Name="txtInsurance" HorizontalAlignment="Left" Height="23" Margin="108,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297"/>
 
     </Grid>
 </Window>

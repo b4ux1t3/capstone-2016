@@ -65,6 +65,9 @@
     <Compile Include="DBReport.xaml.cs">
       <DependentUpon>DBReport.xaml</DependentUpon>
     </Compile>
+    <Compile Include="insertTreatment.xaml.cs">
+      <DependentUpon>insertTreatment.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
@@ -100,6 +103,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="DBReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="insertTreatment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
