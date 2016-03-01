@@ -98,6 +98,9 @@
     <Compile Include="DBMWindow.xaml.cs">
       <DependentUpon>DBMWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TabEntryDel.xaml.cs">
+      <DependentUpon>TabEntryDel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TestLogIn.xaml.cs">
       <DependentUpon>TestLogIn.xaml</DependentUpon>
     </Compile>
@@ -171,6 +174,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DBMWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabEntryDel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
