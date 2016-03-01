@@ -77,6 +77,9 @@
     <Compile Include="MedAdviceText.xaml.cs">
       <DependentUpon>MedAdviceText.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewStaff.xaml.cs">
+      <DependentUpon>NewStaff.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Patient_Home.xaml.cs">
       <DependentUpon>Patient_Home.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MedAdviceText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NewStaff.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -229,7 +229,6 @@ namespace capstone
             
         }
         #endregion
-        //Todo: Add delete functionality
         #region Delete
         /// <summary>
         /// Deletes an entry froma table.
@@ -240,7 +239,7 @@ namespace capstone
         /// <returns>Whether the deletion was successful</returns>
         internal bool Delete(int id, string table, string idField)
         {
-            string query = string.Format("DELETE FROM {0} WHERE {1} = {2}", table, idField, id);
+            string query = string.Format("DELETE FROM {0} WHERE {1} = {2};", table, idField, id);
 
             Console.WriteLine(query);
 
