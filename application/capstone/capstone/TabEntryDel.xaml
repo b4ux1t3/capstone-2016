@@ -7,13 +7,11 @@
         mc:Ignorable="d"
         Title="TabEntryDel" Height="300" Width="300">
     <Grid>
-        <TextBox x:Name="entryID" HorizontalAlignment="Left" Height="21" Margin="139,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
         <TextBox x:Name="TableName" HorizontalAlignment="Left" Height="21" Margin="139,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
-        <TextBox x:Name="IDField" HorizontalAlignment="Left" Height="21" Margin="139,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
-        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="107,27,0,0" VerticalAlignment="Top" Height="27" Width="27"/>
-        <Label x:Name="label_Copy" Content="Table" HorizontalAlignment="Left" Margin="89,60,0,0" VerticalAlignment="Top" Height="27" Width="45"/>
-        <Label x:Name="label_Copy1" Content="ID Field" HorizontalAlignment="Left" Margin="79,94,0,0" VerticalAlignment="Top" Height="27" Width="55"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="107,58,0,0" VerticalAlignment="Top" Height="27" Width="27"/>
+        <Label x:Name="label_Copy" Content="Table" HorizontalAlignment="Left" Margin="89,26,0,0" VerticalAlignment="Top" Height="27" Width="45"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="181,132,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <ComboBox x:Name="TableSelect" HorizontalAlignment="Left" Margin="139,31,0,0" VerticalAlignment="Top" Width="117" SelectionChanged="comboBox_SelectionChanged"/>
 
     </Grid>
 </Window>

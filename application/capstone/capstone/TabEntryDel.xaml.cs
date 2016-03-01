@@ -19,9 +19,13 @@ namespace capstone
     /// </summary>
     public partial class TabEntryDel : Window
     {
-        public TabEntryDel()
+        internal Main MainWindow;
+        internal TabEntryDel(Main main)
         {
             InitializeComponent();
+            this.MainWindow = main;
         }
+
+
     }
 }
