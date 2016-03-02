@@ -53,5 +53,10 @@ namespace capstone
                 MessageBox.Show("Please make sure all of teh information is filled out. Stop trying to break things.");
             }
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.Show();
+        }
     }
 }

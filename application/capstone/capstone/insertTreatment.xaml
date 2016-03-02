@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="insertTreatment" Height="348.013" Width="377.073">
+        Title="insertTreatment" Height="348.013" Width="377.073"
+        Closing="winNewTreatment_Closing">
     <Grid>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="131,273,0,0" VerticalAlignment="Top" Width="96" Click="btnSubmit_Click"/>
         <TextBox x:Name="txtTreatmentTitle" HorizontalAlignment="Left" Height="23" Margin="47,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" TextChanged="txtTreatmentTitle_TextChanged"/>

@@ -1,0 +1,14 @@
+Appointments.xaml.cs
+DBMWindow.xaml.cs
+DBReport.xaml.cs
+insertTreatment.xaml.cs
+MedAdviceHome.xaml.cs
+MedAdviceText.xaml.cs
+NewStaff.xaml.cs
+Patient_Consultation.xaml.cs
+Patient_ConsultTreatments.xaml.cs
+Patient_Home.xaml.cs
+Patient_Lookup.xaml.cs
+Patient_Registration.xaml.cs
+Reporting_Home.xaml.cs
+TabEntryDel.xaml.cs

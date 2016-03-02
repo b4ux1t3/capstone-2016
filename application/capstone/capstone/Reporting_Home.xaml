@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Reporting" Height="239.098" Width="499.624" Foreground="#FF66E0E0">
+        Title="Reporting" Height="239.098" Width="499.624" Foreground="#FF66E0E0"
+        Closing="Window_Closing">
     <Grid Margin="0,10,0,0">
         <Button x:Name="Patients" Content="Patients" HorizontalAlignment="Left" Margin="183,28,0,0" VerticalAlignment="Top" Width="125" Height="30"/>
         <Button x:Name="Treatments" Content="Treatments" HorizontalAlignment="Left" Margin="183,81,0,0" VerticalAlignment="Top" Width="125" Height="30"/>

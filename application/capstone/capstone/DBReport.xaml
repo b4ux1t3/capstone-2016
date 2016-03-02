@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="DBReport" Height="300" Width="300">
+        Title="DBReport" Height="300" Width="300"
+        Closing="Window_Closing">
     <Grid>
         <DataGrid x:Name="resultGrid" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Height="183" Width="272"/>
         <Button x:Name="btnOkay" Content="Okay" HorizontalAlignment="Left" Margin="205,20,0,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="0.5,0.5" Height="37" Click="btnOkay_Click">

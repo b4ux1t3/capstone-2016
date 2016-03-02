@@ -19,19 +19,25 @@ namespace capstone
     /// </summary>
     public partial class PatientLookup : Window
     {
-        Window SourceWindow;
-        public PatientLookup(Window sourceWindow)
+        internal Main HomeWindow;
+        internal Window Source;
+        public PatientLookup(Window sourceWindow, Main main)
         {
             InitializeComponent();
-
-            this.SourceWindow = sourceWindow;
+            this.HomeWindow = main;
+            this.Source = sourceWindow;
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            DBReport report = new DBReport(SourceWindow);
+            DBReport report = new DBReport(HomeWindow, Source);
             report.Show();
             this.Close();
+        }
+
+        private void winPatient_Lookup_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
         }
     }
 }

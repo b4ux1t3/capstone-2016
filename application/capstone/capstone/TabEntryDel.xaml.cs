@@ -62,5 +62,10 @@ namespace capstone
                 id = "appointment_ID";
             }
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.Show();
+        }        
     }
 }

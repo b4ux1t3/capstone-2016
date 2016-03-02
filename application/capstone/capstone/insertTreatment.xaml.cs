@@ -24,6 +24,7 @@ namespace capstone
         internal insertTreatment(Main main)
         {
             InitializeComponent();
+            this.MainWindow = main;
         }
 
         private void txtTreatmentTitle_TextChanged(object sender, TextChangedEventArgs e)
@@ -54,6 +55,11 @@ namespace capstone
             {
                 MessageBox.Show("Please make sure all of the information is filled out. Stop trying to break things. Thank you.");
             }
+        }
+
+        private void winNewTreatment_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.Show();
         }
     }
 }

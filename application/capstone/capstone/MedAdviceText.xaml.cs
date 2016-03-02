@@ -17,16 +17,23 @@ namespace capstone
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class MedReport : Window
     {
-        public Window1()
+        Main MainWindow;
+        public MedReport(Main main)
         {
             InitializeComponent();
+            this.MainWindow = main;
         }
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.Show();
         }
     }
 }

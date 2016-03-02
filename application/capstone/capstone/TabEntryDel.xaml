@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="TabEntryDel" Height="184.337" Width="207.831">
+        Title="TabEntryDel" Height="184.337" Width="207.831"
+        Closing="Window_Closing">
     <Grid>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="21" Margin="55,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
         <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="23,37,0,0" VerticalAlignment="Top" Height="27" Width="27"/>

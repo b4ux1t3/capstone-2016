@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="New Patient Registration" Height="524.436" Width="516.541">
+        Title="New Patient Registration" Height="524.436" Width="516.541"
+        Closing="winPatient_Reg_Closing">
     <Grid Margin="0,0,0,4">
         <Label x:Name="label" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>

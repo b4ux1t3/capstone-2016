@@ -19,18 +19,24 @@ namespace capstone
     /// </summary>
     public partial class DBReport : Window
     {
-        Window SourceWindow;
-        public DBReport(Window sourceWindow)
+        Main HomeWindow;
+        Window Source;
+        public DBReport(Main main, Window source)
         {
             InitializeComponent();
-
-            this.SourceWindow = sourceWindow;
+            this.HomeWindow = main;
+            this.Source = source;
         }
 
         private void btnOkay_Click(object sender, RoutedEventArgs e)
         {
-            SourceWindow.Show();
+            Source.Show();
             this.Close();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
         }
     }
 }

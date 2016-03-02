@@ -19,9 +19,11 @@ namespace capstone
     /// </summary>
     public partial class WinPatientConsult : Window
     {
-        public WinPatientConsult()
+        Main HomeWindow;
+        public WinPatientConsult(Main main)
         {
             InitializeComponent();
+            this.HomeWindow = main;
         }
 
         
@@ -36,6 +38,11 @@ namespace capstone
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
         }
     }
 }

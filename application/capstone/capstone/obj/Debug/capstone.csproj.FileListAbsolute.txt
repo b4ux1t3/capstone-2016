@@ -129,3 +129,7 @@ D:\capstone-2016\application\capstone\capstone\obj\Debug\capstone.Properties.Res
 D:\capstone-2016\application\capstone\capstone\obj\Debug\capstone.csproj.GenerateResource.Cache
 D:\capstone-2016\application\capstone\capstone\obj\Debug\capstone.exe
 D:\capstone-2016\application\capstone\capstone\obj\Debug\capstone.pdb
+D:\capstone-2016\application\capstone\capstone\obj\Debug\NewStaff.g.cs
+D:\capstone-2016\application\capstone\capstone\obj\Debug\TabEntryDel.g.cs
+D:\capstone-2016\application\capstone\capstone\obj\Debug\NewStaff.baml
+D:\capstone-2016\application\capstone\capstone\obj\Debug\TabEntryDel.baml

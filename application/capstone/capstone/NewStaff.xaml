@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="NewStaff" Height="300" Width="300">
+        Title="NewStaff" Height="300" Width="300"
+        Closing="Window_Closing">
     <Grid>
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="21,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="155,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

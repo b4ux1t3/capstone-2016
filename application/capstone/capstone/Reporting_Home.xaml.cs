@@ -26,5 +26,10 @@ namespace capstone
             InitializeComponent();
             this.HomeWindow = sourceWindow;
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
+        }
     }
 }

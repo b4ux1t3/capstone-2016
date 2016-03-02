@@ -45,5 +45,10 @@ namespace capstone
             register.Show();
             this.Close();
         }
+
+        private void winPatient_Home_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
+        }
     }
 }

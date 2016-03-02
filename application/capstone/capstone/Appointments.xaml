@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Appointments" Height="341.729" Width="554.887">
+        Title="Appointments" Height="341.729" Width="554.887"
+        Closing="winAppointments_Closing">
     <Grid Margin="0,0,0,1">
         <Label x:Name="label" Content="Patient ID: " HorizontalAlignment="Left" Margin="52,47,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPatientID" HorizontalAlignment="Left" Height="23" Margin="119,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="381" TextChanged="textBox_TextChanged"/>

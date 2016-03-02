@@ -19,8 +19,8 @@ namespace capstone
     /// </summary>
     public partial class MedAdviceHome : Window
     {
-        internal Window HomeWindow;
-        public MedAdviceHome(Window sourceWindow)
+        internal Main HomeWindow;
+        public MedAdviceHome(Main sourceWindow)
         {
             InitializeComponent();
             this.HomeWindow = sourceWindow;
@@ -28,9 +28,14 @@ namespace capstone
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
-            PatientLookup lookup = new PatientLookup(this);
+            PatientLookup lookup = new PatientLookup(this, HomeWindow);
             lookup.Show();
             this.Hide();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
         }
     }
 }

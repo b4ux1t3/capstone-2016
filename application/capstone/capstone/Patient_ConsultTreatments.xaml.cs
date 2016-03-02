@@ -19,14 +19,21 @@ namespace capstone
     /// </summary>
     public partial class WinPatientTreatment : Window
     {
-        public WinPatientTreatment()
+        Main MainWindow;
+        public WinPatientTreatment(Main main)
         {
             InitializeComponent();
+            this.MainWindow = main;
         }
 
         private void btnApply_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.Show();
         }
     }
 }

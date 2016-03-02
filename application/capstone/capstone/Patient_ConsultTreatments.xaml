@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Patient Treatment" Height="239.098" Width="499.624">
+        Title="Patient Treatment" Height="239.098" Width="499.624"
+        Closing="Window_Closing">
     <Grid Margin="0,10,0,0">
         <Label x:Name="label" Content="Patient ID: XXXX" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.086,-0.076" Width="98"/>
         <ComboBox x:Name="cmboTreatments" HorizontalAlignment="Left" Margin="27,89,0,0" VerticalAlignment="Top" Width="433" RenderTransformOrigin="0.499,-0.991"/>

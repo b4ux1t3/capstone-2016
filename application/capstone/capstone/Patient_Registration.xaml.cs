@@ -66,5 +66,10 @@ namespace capstone
             }
             
         }
+
+        private void winPatient_Reg_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.Show();
+        }
     }
 }

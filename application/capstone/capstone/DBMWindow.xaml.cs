@@ -42,5 +42,10 @@ namespace capstone
             delete.Show();
             this.Close();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
+        }
     }
 }

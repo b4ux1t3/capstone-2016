@@ -19,8 +19,8 @@ namespace capstone
     /// </summary>
     public partial class AppointmentHome : Window
     {
-        Window HomeWindow;
-        public AppointmentHome(Window sourceWindow)
+        Main HomeWindow;
+        public AppointmentHome(Main sourceWindow)
         {
             InitializeComponent();
 
@@ -52,6 +52,11 @@ namespace capstone
         private void drpTime_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void winAppointments_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            HomeWindow.Show();
         }
     }
 }
