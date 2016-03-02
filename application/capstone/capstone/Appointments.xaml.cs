@@ -34,7 +34,7 @@ namespace capstone
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
-            PatientLookup lookup = new PatientLookup(this);
+            PatientLookup lookup = new PatientLookup(this, HomeWindow);
             lookup.Show();
             this.Hide();
         }
