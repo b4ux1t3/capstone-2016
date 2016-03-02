@@ -38,9 +38,28 @@ namespace capstone
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             if(idField != null && txtID.ToString() != String.Empty)
-            MainWindow.Connector.Delete(id, table, idField);
-            MainWindow.Show();
-            this.Close();
+            {
+                try
+                {
+                    if (MainWindow.Connector.Delete(id, table, idField))
+                    {
+                        MainWindow.Show();
+                        this.Close();
+                    }
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("There was an error. Here it is. Exiting to Home Window\n" + ex.Message);
+                    MainWindow.Show();
+                    this.Close();
+                }
+                
+                
+            }
+            else
+            {
+                MessageBox.Show("Please make sure you have a table selected and an ID entered");
+            }
+            
         }
 
         private void tableSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -48,18 +67,22 @@ namespace capstone
             if (tableSelect.SelectedItem.ToString() == "Staff")
             {
                 id = "staff_ID";
+                table = "staff";
             }
             else if (tableSelect.SelectedIndex.ToString() == "Patient")
             {
                 id = "patient_ID";
+                table = "patients";
             }
             else if (tableSelect.SelectedIndex.ToString() == "Treatment")
             {
                 id = "treatment_ID";
+                table = "treatments";
             }
             else if (tableSelect.SelectedIndex.ToString() == "Appointment")
             {
                 id = "appointment_ID";
+                table = "appointments";
             }
         }
 
