@@ -237,7 +237,7 @@ namespace capstone
         /// <param name="table">The table from which we would like to delete the entry</param>
         /// <param name="idField">The primary key for the table</param>
         /// <returns>Whether the deletion was successful</returns>
-        internal bool Delete(int id, string table, string idField)
+        internal bool Delete(string id, string table, string idField)
         {
             string query = string.Format("DELETE FROM {0} WHERE {1} = {2};", table, idField, id);
 

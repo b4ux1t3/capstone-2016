@@ -20,12 +20,47 @@ namespace capstone
     public partial class TabEntryDel : Window
     {
         internal Main MainWindow;
+
+        private string idField;
+        private string id;
+        private string table;
+
         internal TabEntryDel(Main main)
         {
             InitializeComponent();
             this.MainWindow = main;
+            tableSelect.Items.Add("Staff");
+            tableSelect.Items.Add("Patient");
+            tableSelect.Items.Add("Treatment");
+            tableSelect.Items.Add("Appointment");
         }
 
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            if(idField != null && txtID.ToString() != String.Empty)
+            MainWindow.Connector.Delete(id, table, idField);
+            MainWindow.Show();
+            this.Close();
+        }
 
+        private void tableSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (tableSelect.SelectedItem.ToString() == "Staff")
+            {
+                id = "staff_ID";
+            }
+            else if (tableSelect.SelectedIndex.ToString() == "Patient")
+            {
+                id = "patient_ID";
+            }
+            else if (tableSelect.SelectedIndex.ToString() == "Treatment")
+            {
+                id = "treatment_ID";
+            }
+            else if (tableSelect.SelectedIndex.ToString() == "Appointment")
+            {
+                id = "appointment_ID";
+            }
+        }
     }
 }
