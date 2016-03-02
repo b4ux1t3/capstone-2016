@@ -38,7 +38,9 @@ namespace capstone
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-
+            TabEntryDel delete = new TabEntryDel(this.HomeWindow);
+            delete.Show();
+            this.Close();
         }
     }
 }
