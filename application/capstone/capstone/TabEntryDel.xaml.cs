@@ -39,6 +39,7 @@ namespace capstone
         {
             if(idField != null && txtID.ToString() != String.Empty)
             {
+                id = txtID.Text;
                 try
                 {
                     if (MainWindow.Connector.Delete(id, table, idField))
@@ -66,22 +67,22 @@ namespace capstone
         {
             if (tableSelect.SelectedItem.ToString() == "Staff")
             {
-                id = "staff_ID";
+                idField = "staff_ID";
                 table = "staff";
             }
             else if (tableSelect.SelectedIndex.ToString() == "Patient")
             {
-                id = "patient_ID";
+                idField = "patient_ID";
                 table = "patients";
             }
             else if (tableSelect.SelectedIndex.ToString() == "Treatment")
             {
-                id = "treatment_ID";
+                idField = "treatment_ID";
                 table = "treatments";
             }
             else if (tableSelect.SelectedIndex.ToString() == "Appointment")
             {
-                id = "appointment_ID";
+                idField = "appointment_ID";
                 table = "appointments";
             }
         }

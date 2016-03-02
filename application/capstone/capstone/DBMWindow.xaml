@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
         Title="Database Management" Height="300" Width="300"
-        Closing="Window_Closing">
+        Closed="Window_Closed">
     <Grid>
         <Button x:Name="btnInsert" Content="Insert" HorizontalAlignment="Left" Margin="111,64,0,0" VerticalAlignment="Top" Width="75" Click="btnInsert_Click"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="111,110,0,0" VerticalAlignment="Top" Width="75" Click="btnDelete_Click"/>

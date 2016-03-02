@@ -29,7 +29,10 @@ namespace capstone
 
         private void btnConsultation_Click(object sender, RoutedEventArgs e)
         {
-
+            WinPatientConsult consult = new WinPatientConsult(HomeWindow);
+            consult.Show();
+            this.Close();
+            HomeWindow.Hide();
         }
 
         private void btnPatientLookup_Click(object sender, RoutedEventArgs e)

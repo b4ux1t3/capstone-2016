@@ -32,6 +32,7 @@ namespace capstone
         {
             Source.Show();
             this.Close();
+            HomeWindow.Hide();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

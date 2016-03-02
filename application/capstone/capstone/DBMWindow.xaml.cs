@@ -41,9 +41,10 @@ namespace capstone
             TabEntryDel delete = new TabEntryDel(this.HomeWindow);
             delete.Show();
             this.Close();
+            HomeWindow.Hide();
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
             HomeWindow.Show();
         }

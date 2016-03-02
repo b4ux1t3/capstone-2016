@@ -33,6 +33,7 @@ namespace capstone
             DBReport report = new DBReport(HomeWindow, Source);
             report.Show();
             this.Close();
+            HomeWindow.Hide();
         }
 
         private void winPatient_Lookup_Closing(object sender, System.ComponentModel.CancelEventArgs e)
