@@ -21,10 +21,17 @@ namespace capstone
     {
         internal DBConnector Connector;
 
-        internal Main(DBConnector connector)
+        internal Main(DBConnector connector, ServerConfig source)
         {
             InitializeComponent();
             Connector = connector;
+        }
+
+        internal Main(DBConnector connector, Main source)
+        {
+            InitializeComponent();
+            Connector = connector;
+            btnDBM.IsEnabled = false;
         }
 
         private void btnPatients_Click(object sender, RoutedEventArgs e)
@@ -61,6 +68,12 @@ namespace capstone
             WinDBM dbm = new WinDBM(this);
             dbm.Show();
             this.Hide();
+        }
+
+        private void winHome_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Main main = new Main(Connector, this);
+            main.Show();
         }
     }
 }

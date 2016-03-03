@@ -39,7 +39,8 @@ namespace capstone
         {
             PatientLookup lookup = new PatientLookup(this, HomeWindow);
             lookup.Show();
-            this.Hide();
+            this.Close();
+            HomeWindow.Hide();
         }
 
         private void btnNewPatientReg_Click(object sender, RoutedEventArgs e)

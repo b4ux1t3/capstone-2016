@@ -37,5 +37,13 @@ namespace capstone
         {
             HomeWindow.Show();
         }
+
+        private void buttsub_Click(object sender, RoutedEventArgs e)
+        {
+            MedReport report = new MedReport(HomeWindow);
+            report.Show();
+            this.Close();
+            HomeWindow.Hide();
+        }
     }
 }

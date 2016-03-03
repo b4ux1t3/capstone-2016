@@ -33,7 +33,7 @@ namespace capstone
                 try
                 {
                     Connector = new DBConnector(txtServer.Text, txtDatabase.Text, txtUserName.Text, txtPassword.Text);
-                    Main MainWindow = new Main(Connector);
+                    Main MainWindow = new Main(Connector, this);
                     MainWindow.Show();
                     this.Close();
                 } catch(MySqlException ex)

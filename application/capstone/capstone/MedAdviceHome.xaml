@@ -12,6 +12,7 @@
         <Label x:Name="label1" Content="Patient ID:" HorizontalAlignment="Left" Height="39" Margin="268,254,0,0" VerticalAlignment="Top" Width="112" FontSize="21.333"/>
         <TextBox x:Name="txtPatID" HorizontalAlignment="Left" Height="39" Margin="384,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
         <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" Height="26" Margin="419,320,0,0" VerticalAlignment="Top" Width="189" FontSize="16" Click="btnBrowse_Click"/>
+        <Button x:Name="buttsub" Content="Submit" HorizontalAlignment="Left" Margin="436,397,0,0" VerticalAlignment="Top" Width="157" Height="84" Click="buttsub_Click"/>
 
     </Grid>
 </Window>

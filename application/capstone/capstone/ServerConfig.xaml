@@ -10,12 +10,13 @@
         <TextBox x:Name="txtServer" HorizontalAlignment="Left" Height="23" Margin="115,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtDatabase" HorizontalAlignment="Left" Height="23" Margin="115,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="115,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="115,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="labServer" Content="Server" HorizontalAlignment="Left" Margin="66,37,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labDatabase" Content="Database" HorizontalAlignment="Left" Margin="50,83,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labUserName" Content="User Name" HorizontalAlignment="Left" Margin="41,126,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labPassword" Content="Password" HorizontalAlignment="Left" Margin="50,176,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="207,240,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="115,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        
 
     </Grid>
 </Window>

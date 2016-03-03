@@ -17,22 +17,6 @@ namespace capstone
         private string Password;
         private string UserName;
 
-        // Just in case we need this for testing.
-        //static void Main(string[] args)
-        //{
-        //    DBConnector x = new DBConnector();
-        //    x.Initialize();
-
-        //    if (x.OpenConnection())
-        //    {
-        //        Console.WriteLine("Yay, it worked!\nPress any key to finish test.");
-        //        Console.Read();
-        //        x.CloseConnection();
-        //    }
-        //    Console.WriteLine("Reached end of main, press any key to exit program.");
-        //    Console.Read();
-        //}
-
         public DBConnector(string server, string database, string username, string password)
         {
             this.Server = server;

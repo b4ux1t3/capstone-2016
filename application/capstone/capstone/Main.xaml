@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Home" Height="296.617" Width="499.624" ResizeMode="NoResize" WindowStyle="ToolWindow" Background="White" BorderBrush="#FF006666">
+        Title="Home" Height="296.617" Width="499.624" ResizeMode="NoResize" WindowStyle="ToolWindow" Background="White" BorderBrush="#FF006666"
+        Closing="winHome_Closing">
     <Grid Margin="0,10,0,0">
         <Button x:Name="btnMedAdvice" Content="Medical Advice" HorizontalAlignment="Left" Margin="305,156,0,0" VerticalAlignment="Top" Width="113" Click="btnMedAdvice_Click"/>
         <Button x:Name="btnAppointments" Content="Appointments" HorizontalAlignment="Left" Margin="75,156,0,0" VerticalAlignment="Top" Width="113" Click="btnAppointments_Click"/>
         <Button x:Name="btnReporting" Content="Reporting" HorizontalAlignment="Left" Margin="305,121,0,0" VerticalAlignment="Top" Width="113" Click="btnReporting_Click"/>
         <Button x:Name="btnPatients" Content="Patients" HorizontalAlignment="Left" Margin="75,121,0,0" VerticalAlignment="Top" Width="113" Click="btnPatients_Click"/>
-        <Button x:Name="btnDBM" Content="Database" HorizontalAlignment="Left" Margin="209,212,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnDBM_Click"/>
+        <Button x:Name="btnDBM" Content="Database" HorizontalAlignment="Left" Margin="209,212,0,0" VerticalAlignment="Top" Width="75" Click="btnDBM_Click"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="27,10,0,0" VerticalAlignment="Top" Width="435" Source="MedExpressLogo.png"/>
 
     </Grid>

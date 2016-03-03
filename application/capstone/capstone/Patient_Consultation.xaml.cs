@@ -37,7 +37,10 @@ namespace capstone
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-
+            WinPatientTreatment consult = new WinPatientTreatment(HomeWindow);
+            consult.Show();
+            this.Close();
+            HomeWindow.Hide();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

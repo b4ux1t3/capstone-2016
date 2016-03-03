@@ -40,8 +40,19 @@ namespace capstone
             }
             else
             {
-                Source.Show();
-                this.Close();
+                try
+                {
+                    Source.Show();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    HomeWindow.Show();
+                }
+                finally
+                {
+                    this.Close();
+                }
             }
             
         }
