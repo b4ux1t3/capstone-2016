@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capstone"
         mc:Ignorable="d"
-        Title="Results" Height="300" Width="300"
+        Title="Results" Height="690" Width="716"
         Closing="Window_Closing" ResizeMode="NoResize">
     <Grid>
-        <Button x:Name="btnOkay" Content="Okay" HorizontalAlignment="Left" Margin="205,20,0,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="0.5,0.5" Height="37" Click="btnOkay_Click">
+        <Button x:Name="btnOkay" Content="Okay" HorizontalAlignment="Left" Margin="621,20,0,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="7.232,0.823" Height="37" Click="btnOkay_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="0.463"/>
-                    <TranslateTransform/>
+                    <TranslateTransform X="-0.112" Y="3.534"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <DataGrid x:Name="reportGrid" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="189" Width="272"/>
+        <DataGrid x:Name="reportGrid" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="581" Width="690"/>
 
     </Grid>
 </Window>

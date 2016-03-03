@@ -64,7 +64,8 @@ namespace capstone
             {
                 MessageBox.Show("Please make sure all of teh information is filled out. Stop trying to break things.");
             }
-            
+            this.Close();
+            MainWindow.Show();
         }
 
         private void winPatient_Reg_Closing(object sender, System.ComponentModel.CancelEventArgs e)
