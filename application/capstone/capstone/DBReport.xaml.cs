@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,11 +22,13 @@ namespace capstone
     {
         Main HomeWindow;
         Window Source;
-        public DBReport(Main main, Window source)
+        DataTable Data;
+        public DBReport(Main main, Window source, DataTable data)
         {
             InitializeComponent();
             this.HomeWindow = main;
             this.Source = source;
+            this.Data = data;
         }
 
         private void btnOkay_Click(object sender, RoutedEventArgs e)

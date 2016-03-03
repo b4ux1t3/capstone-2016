@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,17 +20,44 @@ namespace capstone
     /// </summary>
     public partial class ReportingHome : Window
     {
-        internal Window HomeWindow;
+        internal Main HomeWindow;
 
-        public ReportingHome(Window sourceWindow)
+        public ReportingHome(Main main)
         {
             InitializeComponent();
-            this.HomeWindow = sourceWindow;
+            this.HomeWindow = main;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             HomeWindow.Show();
+        }
+
+        private void Patients_Click(object sender, RoutedEventArgs e)
+        {
+            string query = "SELECT * FROM patients;";
+
+            DataTable data = HomeWindow.Connector.SendQuery(query);
+
+            DBReport report = new DBReport(HomeWindow, this, data);
+        }
+
+        private void Treatments_Click(object sender, RoutedEventArgs e)
+        {
+            string query = "SELECT * FROM treatments;";
+
+            DataTable data = HomeWindow.Connector.SendQuery(query);
+
+            DBReport report = new DBReport(HomeWindow, this, data);
+        }
+
+        private void StaffSchedule_Click(object sender, RoutedEventArgs e)
+        {
+            string query = "SELECT * FROM staffAvailability;";
+
+            DataTable data = HomeWindow.Connector.SendQuery(query);
+
+            DBReport report = new DBReport(HomeWindow, this, data);
         }
     }
 }

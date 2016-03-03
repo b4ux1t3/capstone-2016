@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace capstone
 {
@@ -147,9 +148,9 @@ namespace capstone
             return outcome;
         }
         
-        private dataCount SendQuery(string query, string column)
+        internal DataTable SendQuery(string query)
         {
-            dataCount data = new dataCount("", 0);
+            DataTable result = new DataTable();
             if (this.OpenConnection())
             { 
                 // Create command and assign the query and connection from the constructor
@@ -158,16 +159,12 @@ namespace capstone
                 //Create a reader to get the data from the database
                 MySqlDataReader reader = cmd.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    data.changeData(reader.GetString(column));
-                    data.incrementCount();
-                }
+                result.Load(reader);
 
                 this.CloseConnection();
             }
 
-            return data;
+            return result;
         }
         #endregion
 

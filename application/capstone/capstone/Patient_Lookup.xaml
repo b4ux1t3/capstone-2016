@@ -20,12 +20,7 @@
         <RadioButton x:Name="radbtnMale" Content="Male" HorizontalAlignment="Left" Margin="268,128,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="radbtnFemale" Content="Female" HorizontalAlignment="Left" Margin="360,128,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label4" Content="Gender" HorizontalAlignment="Left" Margin="315,154,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtArea" HorizontalAlignment="Left" Height="23" Margin="21,213,0,0" TextWrapping="Wrap" Text="(     )" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSwitch" HorizontalAlignment="Left" Height="23" Margin="69,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37"/>
-        <TextBox x:Name="txtLine" HorizontalAlignment="Left" Height="23" Margin="127,213,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
         <Label x:Name="label5" Content="Phone" HorizontalAlignment="Left" Margin="62,241,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label6" Content="-" HorizontalAlignment="Left" Margin="55,209,0,0" VerticalAlignment="Top" Width="14" RenderTransformOrigin="0.672,0.139"/>
-        <Label x:Name="label7" Content="-" HorizontalAlignment="Left" Margin="108,210,0,0" VerticalAlignment="Top" Width="14" RenderTransformOrigin="-0.657,-1.672"/>
         <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="23" Margin="229,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
         <Label x:Name="label8" Content="First Name" HorizontalAlignment="Left" Margin="96,86,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label9" Content="Last Name" HorizontalAlignment="Left" Margin="339,86,0,0" VerticalAlignment="Top"/>
@@ -34,6 +29,7 @@
         <ComboBox x:Name="drpInsurance" HorizontalAlignment="Left" Margin="55,357,0,0" VerticalAlignment="Top" Width="389"/>
         <Label x:Name="label12" Content="Insurance Name" HorizontalAlignment="Left" Margin="204,384,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="172,440,0,0" VerticalAlignment="Top" Width="160" Height="22" Click="btnSubmit_Click"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Height="23" Margin="33,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
