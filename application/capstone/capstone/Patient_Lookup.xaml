@@ -11,9 +11,9 @@
         <Label x:Name="label" Content="Patient's Personal Information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="21,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="268,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
-        <TextBox x:Name="txtBDayMonth" HorizontalAlignment="Left" Height="23" Margin="21,126,0,0" TextWrapping="Wrap" Text="MM" VerticalAlignment="Top" Width="31"/>
-        <TextBox x:Name="txtBDayDay" HorizontalAlignment="Left" Height="23" Margin="69,126,0,0" TextWrapping="Wrap" Text="DD" VerticalAlignment="Top" Width="31"/>
-        <TextBox x:Name="txtBDayYear" HorizontalAlignment="Left" Height="23" Margin="120,126,0,0" TextWrapping="Wrap" Text="YYYY" VerticalAlignment="Top" Width="33"/>
+        <TextBox x:Name="txtBDayMonth" HorizontalAlignment="Left" Height="23" Margin="21,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="31"/>
+        <TextBox x:Name="txtBDayDay" HorizontalAlignment="Left" Height="23" Margin="69,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="31"/>
+        <TextBox x:Name="txtBDayYear" HorizontalAlignment="Left" Height="23" Margin="120,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="33"/>
         <Label x:Name="label1" Content="/" HorizontalAlignment="Left" Margin="52,123,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="-0.545,-3.215"/>
         <Label x:Name="label2" Content="/" HorizontalAlignment="Left" Margin="105,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.348,-3.734"/>
         <Label x:Name="label3" Content="Birthday" HorizontalAlignment="Left" Margin="52,154,0,0" VerticalAlignment="Top"/>

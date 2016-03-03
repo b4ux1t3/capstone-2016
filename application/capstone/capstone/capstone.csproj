@@ -77,6 +77,9 @@
     <Compile Include="MedAdviceText.xaml.cs">
       <DependentUpon>MedAdviceText.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewSchedule.xaml.cs">
+      <DependentUpon>NewSchedule.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewStaff.xaml.cs">
       <DependentUpon>NewStaff.xaml</DependentUpon>
     </Compile>
@@ -101,8 +104,8 @@
     <Compile Include="TabEntryDel.xaml.cs">
       <DependentUpon>TabEntryDel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TestLogIn.xaml.cs">
-      <DependentUpon>TestLogIn.xaml</DependentUpon>
+    <Compile Include="InsertHome.xaml.cs">
+      <DependentUpon>InsertHome.xaml</DependentUpon>
     </Compile>
     <Page Include="Appointments.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -120,19 +123,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="LogInWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DBConnector.cs" />
-    <Compile Include="LogInWindow.xaml.cs">
-      <DependentUpon>LogInWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Page Include="MedAdviceHome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -140,6 +135,10 @@
     <Page Include="MedAdviceText.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NewSchedule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="NewStaff.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -181,9 +180,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TestLogIn.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="InsertHome.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

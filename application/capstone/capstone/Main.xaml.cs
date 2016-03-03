@@ -19,22 +19,12 @@ namespace capstone
     /// </summary>
     public partial class Main : Window
     {
-        internal int UserID;
-
         internal DBConnector Connector;
 
-        internal Main(bool isAdmin, int userID, DBConnector connector)
+        internal Main(DBConnector connector)
         {
             InitializeComponent();
-
-            if (isAdmin)
-            {
-                btnDBM.IsEnabled = true;
-            }
-
-            this.UserID = userID;
-
-            this.Connector = connector;
+            Connector = connector;
         }
 
         private void btnPatients_Click(object sender, RoutedEventArgs e)

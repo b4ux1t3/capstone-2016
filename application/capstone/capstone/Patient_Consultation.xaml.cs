@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace capstone
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for InsertHome.xaml
     /// </summary>
     public partial class WinPatientConsult : Window
     {

@@ -20,12 +20,10 @@ namespace capstone
     /// </summary>
     public partial class ServerConfig : Window
     {
-        WinLogIn LogIn;
-
-        public ServerConfig(WinLogIn sourceWindow)
+        internal DBConnector Connector;
+        public ServerConfig()
         {
             InitializeComponent();
-            this.LogIn = sourceWindow;
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -34,8 +32,9 @@ namespace capstone
             {
                 try
                 {
-                    LogIn.Connector = new DBConnector(txtServer.Text, txtDatabase.Text, txtUserName.Text, txtPassword.Text);
-                    LogIn.Show();
+                    Connector = new DBConnector(txtServer.Text, txtDatabase.Text, txtUserName.Text, txtPassword.Text);
+                    Main MainWindow = new Main(Connector);
+                    MainWindow.Show();
                     this.Close();
                 } catch(MySqlException ex)
                 {

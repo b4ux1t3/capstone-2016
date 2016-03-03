@@ -33,7 +33,10 @@ namespace capstone
 
         private void btnInsert_Click(object sender, RoutedEventArgs e)
         {
-
+            InsertHome insert = new InsertHome(HomeWindow);
+            insert.Show();
+            this.Close();
+            HomeWindow.Hide();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
