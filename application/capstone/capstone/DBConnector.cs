@@ -150,16 +150,16 @@ namespace capstone
         
         internal DataTable SendQuery(string query)
         {
-            DataTable result = new DataTable();
+            DataTable result = new DataTable("Results");
             if (this.OpenConnection())
             { 
                 // Create command and assign the query and connection from the constructor
-                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataAdapter cmd = new MySqlDataAdapter(query, connection);
 
                 //Create a reader to get the data from the database
-                MySqlDataReader reader = cmd.ExecuteReader();
+                cmd.Fill(result);
 
-                result.Load(reader);
+                Console.WriteLine(result.ToString());
 
                 this.CloseConnection();
             }

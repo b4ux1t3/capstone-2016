@@ -47,6 +47,7 @@ namespace capstone
             PatientRegistration register = new PatientRegistration(this.HomeWindow); 
             register.Show();
             this.Close();
+            HomeWindow.Hide();
         }
 
         private void winPatient_Home_Closing(object sender, System.ComponentModel.CancelEventArgs e)

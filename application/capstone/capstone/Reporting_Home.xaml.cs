@@ -39,7 +39,10 @@ namespace capstone
 
             DataTable data = HomeWindow.Connector.SendQuery(query);
 
-            DBReport report = new DBReport(HomeWindow, this, data);
+            DBReport report = new DBReport(HomeWindow, HomeWindow, data);
+            report.Show();
+            this.Close();
+            HomeWindow.Hide();
         }
 
         private void Treatments_Click(object sender, RoutedEventArgs e)
@@ -48,7 +51,10 @@ namespace capstone
 
             DataTable data = HomeWindow.Connector.SendQuery(query);
 
-            DBReport report = new DBReport(HomeWindow, this, data);
+            DBReport report = new DBReport(HomeWindow, HomeWindow, data);
+            report.Show();
+            this.Close();
+            HomeWindow.Hide();
         }
 
         private void StaffSchedule_Click(object sender, RoutedEventArgs e)
@@ -57,7 +63,10 @@ namespace capstone
 
             DataTable data = HomeWindow.Connector.SendQuery(query);
 
-            DBReport report = new DBReport(HomeWindow, this, data);
+            DBReport report = new DBReport(HomeWindow, HomeWindow, data);
+            report.Show();
+            this.Close();
+            HomeWindow.Hide();
         }
     }
 }

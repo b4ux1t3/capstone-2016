@@ -29,13 +29,21 @@ namespace capstone
             this.HomeWindow = main;
             this.Source = source;
             this.Data = data;
+            reportGrid.ItemsSource = Data.DefaultView;
         }
 
         private void btnOkay_Click(object sender, RoutedEventArgs e)
         {
-            Source.Show();
-            this.Close();
-            HomeWindow.Hide();
+            if (HomeWindow == Source)
+            {
+                this.Close();
+            }
+            else
+            {
+                Source.Show();
+                this.Close();
+            }
+            
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
